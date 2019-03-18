@@ -1,0 +1,4027 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1">
+<title>ALOOO Roto Standings</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+<style>
+  table tr:first-child td:first-child {
+    vertical-align: middle;
+  }
+  table.standings tr:not(.head) td:nth-child(3),
+  table.averages tr:not(.head) td:nth-child(2) {
+    text-align: left;
+  }
+  table.standings tr:not(.head) td:nth-child(10),
+  table.standings tr:not(.head) td:nth-child(17),
+  table.standings tr:not(.head) td:nth-child(18),
+  table.standings tr:not(.head) td:nth-child(21) {
+    font-weight: bold;
+    background-color: #c0c0c0;
+  }
+  table.averages tr:nth-child(15),
+  table.averages tr:nth-child(16),
+  table.averages tr:nth-child(17) {
+    font-weight: bold;
+  }
+  table.averages tr:nth-child(15) td:first-child,
+  table.averages tr:nth-child(16) td:first-child,
+  table.averages tr:nth-child(17) td:first-child {
+    text-align: left;
+  }
+  sup { line-height: 1em; }
+  .green { color: green; }
+  .red { color: red; }
+  .leader {
+    color: #cc9900;
+    font-weight: bold;
+    text-shadow: #444 0 1px 0;
+  }
+</style>
+
+</head>
+
+<body>
+
+<div id="headerBGimg"></div>
+<div id="headerBGcolor"></div>
+
+<!-- Begin Page Container -->
+<div id="pageContainer" onclick="void(0)"> <!-- dummy onclick permits event delegation in Safari Mobile 7.0+ -->
+
+<!--#include virtual="/alooo/head-nav.html"-->
+
+<!-- Begin Content -->
+<main>
+<h1>2017 Roto Standings</h1>
+
+<p><em>NOTE: Click <a href="roto-exp.html">here</a> for a detailed explanation of how the standings are calculated.</em></p>
+
+<p class="insetBox tabMenu">
+  <a id="menu-wk21" href="#">Week 21</a>&nbsp;|&nbsp;
+  <a id="menu-wk19" href="#">Week 19</a>&nbsp;|&nbsp;
+  <a id="menu-wk16" href="#">Week 16</a>&nbsp;|&nbsp;
+  <a id="menu-wk12" href="#">Week 12</a>&nbsp;|&nbsp;
+  <a id="menu-wk9" href="#">Week 9</a>
+</p>
+
+<!--begin Week 21-->
+<div id="tab-wk21" class="tab">
+
+<table class="standings withGrid roto scroll-x">
+  <tr class="head">
+    <td colspan="3" rowspan="2">Final Standings<br>(through Week 21)</td>
+    <td colspan="6">% chance of winning category</td>
+    <td rowspan="2">Batting*</td>
+    <td colspan="6">% chance of winning category</td>
+    <td rowspan="2">Pitching*</td>
+    <td rowspan="2">Total*<br>(# cats)</td>
+    <td rowspan="2">Week 19</td>
+    <td rowspan="2">Change</td>
+    <td rowspan="2">Average**<br>(win%)</td>
+    <td rowspan="2">H2H%</td>
+    <td rowspan="2">Roto &ndash;<br>H2H</td>
+  </tr>
+  <tr class="head">
+    <td>R</td>
+    <td>HR</td>
+    <td>RBI</td>
+    <td>AVG</td>
+    <td>OBP</td>
+    <td>NSB</td>
+    <td>W</td>
+    <td>SV</td>
+    <td>K</td>
+    <td>HLD</td>
+    <td>ERA</td>
+    <td>WHIP</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td class="imgCell"><img src="images/mrobz_v3_100.png"></td>
+    <td>Mookies</td>
+    <td><span class="leader">66</span></td>
+    <td>60</td>
+    <td><span class="leader">67</span></td>
+    <td>44</td>
+    <td>50</td>
+    <td>63</td>
+    <td>3.50</td>
+    <td>61</td>
+    <td>61</td>
+    <td><span class="leader">67</span></td>
+    <td>65</td>
+    <td><span class="leader">71</span></td>
+    <td><span class="leader">64</span></td>
+    <td><span class="leader">3.90</span></td>
+    <td><span class="leader">7.40</span></td>
+    <td>7.41</td>
+    <td><span class="red">-0.01</span></td>
+    <td>62</td>
+    <td>64</td>
+    <td>-2</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td class="imgCell"><img src="images/orange_black_hat_100.gif"></td>
+    <td>Conquistadors</td>
+    <td>58</td>
+    <td><span class="leader">70</span></td>
+    <td>59</td>
+    <td>46</td>
+    <td>50</td>
+    <td>38</td>
+    <td>3.21</td>
+    <td>45</td>
+    <td>58</td>
+    <td>61</td>
+    <td>66</td>
+    <td>58</td>
+    <td>63</td>
+    <td>3.51</td>
+    <td>6.72</td>
+    <td>6.88</td>
+    <td><span class="red">-0.16</span></td>
+    <td>56</td>
+    <td>61</td>
+    <td>-5</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td class="imgCell"><img src="images/blue_black_hat_100.gif"></td>
+    <td>Washington McNasty</td>
+    <td>63</td>
+    <td>55</td>
+    <td>54</td>
+    <td>58</td>
+    <td>57</td>
+    <td><span class="leader">68</span></td>
+    <td><span class="leader">3.56</span></td>
+    <td>44</td>
+    <td>50</td>
+    <td>56</td>
+    <td>66</td>
+    <td>47</td>
+    <td>49</td>
+    <td>3.13</td>
+    <td>6.69</td>
+    <td>6.64</td>
+    <td><span class="green">+0.05</span></td>
+    <td>56</td>
+    <td>59</td>
+    <td>-3</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td class="imgCell"><img src="images/blue_sox_192.jpg"></td>
+    <td>South Bend Blue Sox</td>
+    <td>59</td>
+    <td>56</td>
+    <td>64</td>
+    <td>52</td>
+    <td>44</td>
+    <td>61</td>
+    <td>3.35</td>
+    <td>44</td>
+    <td>67</td>
+    <td>56</td>
+    <td>57</td>
+    <td>43</td>
+    <td>39</td>
+    <td>3.06</td>
+    <td>6.41</td>
+    <td>6.41</td>
+    <td><span class="black">0</span></td>
+    <td>53</td>
+    <td>51</td>
+    <td>+2</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td class="imgCell"><img src="images/lnt_v2_100.png"></td>
+    <td>Lightning N Thunder</td>
+    <td>50</td>
+    <td>42</td>
+    <td>51</td>
+    <td>48</td>
+    <td>41</td>
+    <td>48</td>
+    <td>2.80</td>
+    <td><span class="leader">63</span></td>
+    <td>57</td>
+    <td>61</td>
+    <td><span class="leader">71</span></td>
+    <td>52</td>
+    <td>53</td>
+    <td>3.57</td>
+    <td>6.36</td>
+    <td>6.34</td>
+    <td><span class="green">+0.02</span></td>
+    <td>53</td>
+    <td>53</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td class="imgCell"><img src="images/camels_192.jpg"></td>
+    <td>Cuban Camels <span class="green">&#8593;</span></td>
+    <td>65</td>
+    <td>61</td>
+    <td>57</td>
+    <td>39</td>
+    <td>52</td>
+    <td>62</td>
+    <td>3.36</td>
+    <td>52</td>
+    <td>52</td>
+    <td>46</td>
+    <td>35</td>
+    <td>53</td>
+    <td>60</td>
+    <td>2.99</td>
+    <td>6.35</td>
+    <td>6.23</td>
+    <td><span class="green">+0.12</span></td>
+    <td>53</td>
+    <td>50</td>
+    <td>+3</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td class="imgCell"><img src="images/sultans_v2_192.jpg"></td>
+    <td>Sultans of Dallas <span class="red">&#8595;</span></td>
+    <td>61</td>
+    <td>61</td>
+    <td>51</td>
+    <td>50</td>
+    <td>57</td>
+    <td>50</td>
+    <td>3.30</td>
+    <td>53</td>
+    <td>48</td>
+    <td>62</td>
+    <td>33</td>
+    <td>47</td>
+    <td>52</td>
+    <td>2.94</td>
+    <td>6.25</td>
+    <td>6.24</td>
+    <td><span class="green">+0.01</span></td>
+    <td>52</td>
+    <td>52</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td class="imgCell"><img src="images/battaillon_192.jpg"></td>
+    <td>BATtaillon</td>
+    <td>46</td>
+    <td>41</td>
+    <td>37</td>
+    <td>45</td>
+    <td>56</td>
+    <td>43</td>
+    <td>2.67</td>
+    <td>54</td>
+    <td>63</td>
+    <td>54</td>
+    <td>33</td>
+    <td>47</td>
+    <td>47</td>
+    <td>2.98</td>
+    <td>5.65</td>
+    <td>5.67</td>
+    <td><span class="red">-0.02</span></td>
+    <td>47</td>
+    <td>50</td>
+    <td>-3</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td class="imgCell"><img src="images/red_hat_100.gif"></td>
+    <td>Three Finger's Ghost <span class="green">&#8593;</span></td>
+    <td>55</td>
+    <td>55</td>
+    <td>50</td>
+    <td><span class="leader">60</span></td>
+    <td><span class="leader">59</span></td>
+    <td>45</td>
+    <td>3.23</td>
+    <td>49</td>
+    <td>12</td>
+    <td>32</td>
+    <td>42</td>
+    <td>41</td>
+    <td>43</td>
+    <td>2.19</td>
+    <td>5.42</td>
+    <td>5.40</td>
+    <td><span class="green">+0.02</span></td>
+    <td>45</td>
+    <td>40</td>
+    <td>+5</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td class="imgCell"><img src="images/possums_192.jpg"></td>
+    <td>Pissed Off Possums <span class="red">&#8595;</span></td>
+    <td>32</td>
+    <td>38</td>
+    <td>40</td>
+    <td>57</td>
+    <td>53</td>
+    <td>55</td>
+    <td>2.75</td>
+    <td>57</td>
+    <td>28</td>
+    <td>41</td>
+    <td>41</td>
+    <td>52</td>
+    <td>43</td>
+    <td>2.62</td>
+    <td>5.37</td>
+    <td>5.43</td>
+    <td><span class="red">-0.06</span></td>
+    <td>45</td>
+    <td>46</td>
+    <td>-1</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td class="imgCell"><img src="images/red_jersey_100.gif"></td>
+    <td>Jackie Treehorn</td>
+    <td>41</td>
+    <td>40</td>
+    <td>52</td>
+    <td>43</td>
+    <td>36</td>
+    <td>40</td>
+    <td>2.52</td>
+    <td>44</td>
+    <td><span class="leader">74</span></td>
+    <td>45</td>
+    <td>23</td>
+    <td>28</td>
+    <td>29</td>
+    <td>2.43</td>
+    <td>4.95</td>
+    <td>4.98</td>
+    <td><span class="red">-0.03</span></td>
+    <td>41</td>
+    <td>43</td>
+    <td>-2</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td class="imgCell"><img src="images/red_jersey_100.gif"></td>
+    <td>Isotopes</td>
+    <td>6</td>
+    <td>22</td>
+    <td>18</td>
+    <td>58</td>
+    <td>45</td>
+    <td>25</td>
+    <td>1.74</td>
+    <td>35</td>
+    <td>30</td>
+    <td>19</td>
+    <td>68</td>
+    <td>60</td>
+    <td>57</td>
+    <td>2.70</td>
+    <td>4.44</td>
+    <td>4.36</td>
+    <td><span class="green">+0.08</span></td>
+    <td>37</td>
+    <td>31</td>
+    <td>+6</td>
+  </tr>
+</table>
+
+<table class="averages withGrid roto scroll-x">
+  <tr class="head">
+    <td colspan="2" rowspan="2">Averages per Week</td>
+    <td colspan="12">Season <sup>&#8225;</sup></td>
+    <td colspan="12">Weeks 20 &ndash; 21</td>
+  </tr>
+  <tr class="head">
+    <td>R</td>
+    <td>HR</td>
+    <td>RBI</td>
+    <td>AVG</td>
+    <td>OBP</td>
+    <td>NSB</td>
+    <td>W</td>
+    <td>SV</td>
+    <td>K</td>
+    <td>HLD</td>
+    <td>ERA</td>
+    <td>WHIP</td>
+    <td>R</td>
+    <td>HR</td>
+    <td>RBI</td>
+    <td>AVG</td>
+    <td>OBP <sup>&#8224;</sup></td>
+    <td>NSB</td>
+    <td>W</td>
+    <td>SV</td>
+    <td>K</td>
+    <td>HLD</td>
+    <td>ERA</td>
+    <td>WHIP</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/battaillon_192.jpg"></td>
+    <td>BATtaillon</td>
+    <td>29.8</td>
+    <td>8.2</td>
+    <td>26.2</td>
+    <td>.269</td>
+    <td>.352</td>
+    <td>1.9</td>
+    <td>3.7</td>
+    <td>3.9</td>
+    <td>57.0</td>
+    <td>1.1</td>
+    <td>4.09</td>
+    <td>1.29</td>
+    <td>28.0</td>
+    <td>8.5</td>
+    <td>26.0</td>
+    <td>.257</td>
+    <td>.341</td>
+    <td>4.0</td>
+    <td>1.5</td>
+    <td>3.0</td>
+    <td>60.5</td>
+    <td>2.0</td>
+    <td>3.67</td>
+    <td>1.12</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/orange_black_hat_100.gif"></td>
+    <td>Conquistadors</td>
+    <td>32.3</td>
+    <td>11.4</td>
+    <td>31.4</td>
+    <td>.267</td>
+    <td>.345</td>
+    <td>1.6</td>
+    <td>3.2</td>
+    <td>3.7</td>
+    <td>60.7</td>
+    <td>2.7</td>
+    <td>3.74</td>
+    <td>1.20</td>
+    <td>29.0</td>
+    <td>11.0</td>
+    <td>30.0</td>
+    <td>.251</td>
+    <td>.328</td>
+    <td>1.5</td>
+    <td>2.5</td>
+    <td>2.0</td>
+    <td>55.5</td>
+    <td>3.5</td>
+    <td>4.15</td>
+    <td>1.18</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/camels_192.jpg"></td>
+    <td>Cuban Camels</td>
+    <td>33.7</td>
+    <td>10.4</td>
+    <td>30.9</td>
+    <td>.264</td>
+    <td>.349</td>
+    <td>3.4</td>
+    <td>3.5</td>
+    <td>3.3</td>
+    <td>53.8</td>
+    <td>1.2</td>
+    <td>3.87</td>
+    <td>1.20</td>
+    <td>40.5</td>
+    <td>12.0</td>
+    <td>31.5</td>
+    <td>.277</td>
+    <td>.365</td>
+    <td>3.0</td>
+    <td>4.5</td>
+    <td>2.0</td>
+    <td>51.0</td>
+    <td>1.0</td>
+    <td>2.96</td>
+    <td>1.05</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/red_jersey_100.gif"></td>
+    <td>Isotopes</td>
+    <td>18.1</td>
+    <td>6.1</td>
+    <td>20.7</td>
+    <td>.279</td>
+    <td>.342</td>
+    <td>0.7</td>
+    <td>2.8</td>
+    <td>2.1</td>
+    <td>43.3</td>
+    <td>3.0</td>
+    <td>3.74</td>
+    <td>1.25</td>
+    <td>21.0</td>
+    <td>10.0</td>
+    <td>25.0</td>
+    <td>.279</td>
+    <td>.357</td>
+    <td>0.0</td>
+    <td>3.0</td>
+    <td>3.5</td>
+    <td>36.5</td>
+    <td>1.5</td>
+    <td>3.23</td>
+    <td>1.11</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/red_jersey_100.gif"></td>
+    <td>Jackie Treehorn</td>
+    <td>28.7</td>
+    <td>8.1</td>
+    <td>29.6</td>
+    <td>.266</td>
+    <td>.333</td>
+    <td>1.7</td>
+    <td>3.2</td>
+    <td>4.7</td>
+    <td>53.4</td>
+    <td>0.7</td>
+    <td>4.90</td>
+    <td>1.40</td>
+    <td>28.0</td>
+    <td>4.0</td>
+    <td>23.0</td>
+    <td>.272</td>
+    <td>.342</td>
+    <td>3.0</td>
+    <td>2.5</td>
+    <td>3.5</td>
+    <td>54.5</td>
+    <td>1.5</td>
+    <td>4.96</td>
+    <td>1.30</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/lnt_v2_100.png"></td>
+    <td>Lightning N Thunder</td>
+    <td>30.5</td>
+    <td>8.3</td>
+    <td>29.4</td>
+    <td>.270</td>
+    <td>.340</td>
+    <td>2.3</td>
+    <td>4.2</td>
+    <td>3.6</td>
+    <td>59.4</td>
+    <td>3.1</td>
+    <td>3.95</td>
+    <td>1.25</td>
+    <td>36.5</td>
+    <td>10.0</td>
+    <td>37.5</td>
+    <td>.254</td>
+    <td>.339</td>
+    <td>3.5</td>
+    <td>5.5</td>
+    <td>2.5</td>
+    <td>58.0</td>
+    <td>2.0</td>
+    <td>4.11</td>
+    <td>1.30</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/mrobz_v3_100.png"></td>
+    <td>Mookies</td>
+    <td>34.6</td>
+    <td>10.2</td>
+    <td>33.8</td>
+    <td>.267</td>
+    <td>.347</td>
+    <td>3.5</td>
+    <td>4.1</td>
+    <td>3.9</td>
+    <td>62.7</td>
+    <td>2.6</td>
+    <td>3.33</td>
+    <td>1.21</td>
+    <td>27.5</td>
+    <td>10.0</td>
+    <td>34.0</td>
+    <td>.249</td>
+    <td>.324</td>
+    <td>5.5</td>
+    <td>4.5</td>
+    <td>4.5</td>
+    <td>74.5</td>
+    <td>2.5</td>
+    <td>2.81</td>
+    <td>1.23</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/possums_192.jpg"></td>
+    <td>Pissed Off Possums</td>
+    <td>26.6</td>
+    <td>7.8</td>
+    <td>26.1</td>
+    <td>.281</td>
+    <td>.351</td>
+    <td>2.7</td>
+    <td>3.8</td>
+    <td>1.9</td>
+    <td>51.6</td>
+    <td>1.5</td>
+    <td>3.95</td>
+    <td>1.31</td>
+    <td>25.5</td>
+    <td>5.5</td>
+    <td>21.5</td>
+    <td>.261</td>
+    <td>.331</td>
+    <td>3.0</td>
+    <td>5.5</td>
+    <td>3.5</td>
+    <td>55.5</td>
+    <td>0.0</td>
+    <td>3.51</td>
+    <td>1.27</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/blue_sox_192.jpg"></td>
+    <td>South Bend Blue Sox</td>
+    <td>32.9</td>
+    <td>9.8</td>
+    <td>33.4</td>
+    <td>.276</td>
+    <td>.341</td>
+    <td>3.1</td>
+    <td>3.1</td>
+    <td>4.3</td>
+    <td>57.7</td>
+    <td>2.3</td>
+    <td>4.33</td>
+    <td>1.33</td>
+    <td>32.5</td>
+    <td>9.5</td>
+    <td>32.5</td>
+    <td>.280</td>
+    <td>.338</td>
+    <td>2.0</td>
+    <td>2.5</td>
+    <td>4.0</td>
+    <td>57.0</td>
+    <td>5.0</td>
+    <td>4.23</td>
+    <td>1.35</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/sultans_v2_192.jpg"></td>
+    <td>Sultans of Dallas</td>
+    <td>32.8</td>
+    <td>10.3</td>
+    <td>29.3</td>
+    <td>.271</td>
+    <td>.353</td>
+    <td>2.4</td>
+    <td>3.6</td>
+    <td>3.1</td>
+    <td>60.7</td>
+    <td>1.0</td>
+    <td>4.12</td>
+    <td>1.26</td>
+    <td>31.5</td>
+    <td>12.0</td>
+    <td>29.5</td>
+    <td>.258</td>
+    <td>.333</td>
+    <td>4.0</td>
+    <td>4.5</td>
+    <td>2.0</td>
+    <td>52.5</td>
+    <td>2.0</td>
+    <td>3.68</td>
+    <td>1.21</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/red_hat_100.gif"></td>
+    <td>Three Finger's Ghost</td>
+    <td>31.6</td>
+    <td>9.6</td>
+    <td>29.1</td>
+    <td>.280</td>
+    <td>.354</td>
+    <td>2.0</td>
+    <td>3.4</td>
+    <td>0.9</td>
+    <td>48.1</td>
+    <td>1.5</td>
+    <td>4.52</td>
+    <td>1.34</td>
+    <td>30.5</td>
+    <td>9.5</td>
+    <td>30.0</td>
+    <td>.287</td>
+    <td>.371</td>
+    <td>2.5</td>
+    <td>3.5</td>
+    <td>2.5</td>
+    <td>49.0</td>
+    <td>0.5</td>
+    <td>5.07</td>
+    <td>1.29</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/blue_black_hat_100.gif"></td>
+    <td>Washington McNasty</td>
+    <td>33.7</td>
+    <td>9.8</td>
+    <td>30.3</td>
+    <td>.279</td>
+    <td>.352</td>
+    <td>4.0</td>
+    <td>3.1</td>
+    <td>3.2</td>
+    <td>57.9</td>
+    <td>2.8</td>
+    <td>4.14</td>
+    <td>1.28</td>
+    <td>29.5</td>
+    <td>3.0</td>
+    <td>19.0</td>
+    <td>.289</td>
+    <td>.366</td>
+    <td>4.5</td>
+    <td>5.0</td>
+    <td>6.0</td>
+    <td>72.5</td>
+    <td>2.0</td>
+    <td>3.46</td>
+    <td>1.12</td>
+  </tr>
+  <tr>
+    <td colspan="2">Max</td>
+    <td>34.6</td>
+    <td>11.4</td>
+    <td>33.8</td>
+    <td>.281</td>
+    <td>.354</td>
+    <td>4.0</td>
+    <td>4.2</td>
+    <td>4.7</td>
+    <td>62.7</td>
+    <td>3.1</td>
+    <td>4.90</td>
+    <td>1.40</td>
+    <td>40.5</td>
+    <td>12.0</td>
+    <td>37.5</td>
+    <td>.289</td>
+    <td>.371</td>
+    <td>5.5</td>
+    <td>5.5</td>
+    <td>6.0</td>
+    <td>74.5</td>
+    <td>5.0</td>
+    <td>5.07</td>
+    <td>1.35</td>
+  </tr>
+  <tr>
+    <td colspan="2">Median</td>
+    <td>31.9</td>
+    <td>9.7</td>
+    <td>29.5</td>
+    <td>.271</td>
+    <td>.348</td>
+    <td>2.3</td>
+    <td>3.5</td>
+    <td>3.5</td>
+    <td>57.4</td>
+    <td>1.9</td>
+    <td>4.02</td>
+    <td>1.27</td>
+    <td>29.3</td>
+    <td>9.8</td>
+    <td>29.8</td>
+    <td>.266</td>
+    <td>.340</td>
+    <td>3.0</td>
+    <td>4.0</td>
+    <td>3.3</td>
+    <td>55.5</td>
+    <td>2.0</td>
+    <td>3.68</td>
+    <td>1.22</td>
+  </tr>
+  <tr>
+    <td colspan="2">Min</td>
+    <td>18.1</td>
+    <td>6.1</td>
+    <td>20.7</td>
+    <td>.264</td>
+    <td>.333</td>
+    <td>0.7</td>
+    <td>2.8</td>
+    <td>0.9</td>
+    <td>43.3</td>
+    <td>0.7</td>
+    <td>3.33</td>
+    <td>1.20</td>
+    <td>21.0</td>
+    <td>3.0</td>
+    <td>19.0</td>
+    <td>.249</td>
+    <td>.324</td>
+    <td>0.0</td>
+    <td>1.5</td>
+    <td>2.0</td>
+    <td>36.5</td>
+    <td>0.0</td>
+    <td>2.81</td>
+    <td>1.05</td>
+  </tr>
+</table>
+
+</div>
+<!--end Week 21-->
+
+<!--begin Week 19-->
+<div id="tab-wk19" class="tab">
+
+<table class="standings withGrid roto scroll-x">
+  <tr class="head">
+    <td colspan="3" rowspan="2">Through Week 19<br>(17 weeks)</td>
+    <td colspan="6">% chance of winning category</td>
+    <td rowspan="2">Batting*</td>
+    <td colspan="6">% chance of winning category</td>
+    <td rowspan="2">Pitching*</td>
+    <td rowspan="2">Total*<br>(# cats)</td>
+    <td rowspan="2">Week 16</td>
+    <td rowspan="2">Change</td>
+    <td rowspan="2">Average**<br>(win%)</td>
+    <td rowspan="2">H2H%</td>
+    <td rowspan="2">Roto &ndash;<br>H2H</td>
+  </tr>
+  <tr class="head">
+    <td>R</td>
+    <td>HR</td>
+    <td>RBI</td>
+    <td>AVG</td>
+    <td>OBP</td>
+    <td>NSB</td>
+    <td>W</td>
+    <td>SV</td>
+    <td>K</td>
+    <td>HLD</td>
+    <td>ERA</td>
+    <td>WHIP</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td class="imgCell"><img src="images/mrobz_v3_100.png"></td>
+    <td>Mookies</td>
+    <td>68</td>
+    <td>60</td>
+    <td>66</td>
+    <td>46</td>
+    <td>52</td>
+    <td>62</td>
+    <td>3.54</td>
+    <td>61</td>
+    <td>60</td>
+    <td>64</td>
+    <td>65</td>
+    <td>71</td>
+    <td>66</td>
+    <td>3.87</td>
+    <td>7.41</td>
+    <td>7.48</td>
+    <td><span class="red">-0.07</span></td>
+    <td>62</td>
+    <td>65</td>
+    <td>-3</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td class="imgCell"><img src="images/orange_black_hat_100.gif"></td>
+    <td>Conquistadors</td>
+    <td>59</td>
+    <td>70</td>
+    <td>60</td>
+    <td>47</td>
+    <td>52</td>
+    <td>40</td>
+    <td>3.28</td>
+    <td>47</td>
+    <td>61</td>
+    <td>63</td>
+    <td>64</td>
+    <td>60</td>
+    <td>66</td>
+    <td>3.61</td>
+    <td>6.88</td>
+    <td>6.86</td>
+    <td><span class="green">+0.02</span></td>
+    <td>57</td>
+    <td>64</td>
+    <td>-7</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td class="imgCell"><img src="images/blue_black_hat_100.gif"></td>
+    <td>Washington McNasty <span class="green">&#8593;</span></td>
+    <td>65</td>
+    <td>61</td>
+    <td>59</td>
+    <td>57</td>
+    <td>55</td>
+    <td>68</td>
+    <td>3.65</td>
+    <td>41</td>
+    <td>45</td>
+    <td>52</td>
+    <td>67</td>
+    <td>46</td>
+    <td>47</td>
+    <td>2.99</td>
+    <td>6.64</td>
+    <td>6.48</td>
+    <td><span class="green">+0.16</span></td>
+    <td>55</td>
+    <td>58</td>
+    <td>-3</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td class="imgCell"><img src="images/blue_sox_192.jpg"></td>
+    <td>South Bend Blue Sox <span class="green">&#8593;</span></td>
+    <td>58</td>
+    <td>56</td>
+    <td>64</td>
+    <td>51</td>
+    <td>44</td>
+    <td>63</td>
+    <td>3.36</td>
+    <td>45</td>
+    <td>67</td>
+    <td>56</td>
+    <td>52</td>
+    <td>43</td>
+    <td>41</td>
+    <td>3.04</td>
+    <td>6.41</td>
+    <td>6.34</td>
+    <td><span class="green">+0.07</span></td>
+    <td>53</td>
+    <td>52</td>
+    <td>+1</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td class="imgCell"><img src="images/lnt_v2_100.png"></td>
+    <td>Lightning N Thunder</td>
+    <td>46</td>
+    <td>39</td>
+    <td>47</td>
+    <td>49</td>
+    <td>41</td>
+    <td>47</td>
+    <td>2.71</td>
+    <td>61</td>
+    <td>59</td>
+    <td>61</td>
+    <td>74</td>
+    <td>53</td>
+    <td>55</td>
+    <td>3.63</td>
+    <td>6.34</td>
+    <td>6.42</td>
+    <td><span class="red">-0.08</span></td>
+    <td>53</td>
+    <td>51</td>
+    <td>+2</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td class="imgCell"><img src="images/sultans_v2_192.jpg"></td>
+    <td>Sultans of Dallas <span class="red">&#8595;</span></td>
+    <td>62</td>
+    <td>59</td>
+    <td>50</td>
+    <td>51</td>
+    <td>59</td>
+    <td>49</td>
+    <td>3.30</td>
+    <td>51</td>
+    <td>50</td>
+    <td>64</td>
+    <td>31</td>
+    <td>47</td>
+    <td>52</td>
+    <td>2.94</td>
+    <td>6.24</td>
+    <td>6.49</td>
+    <td><span class="red">-0.25</span></td>
+    <td>52</td>
+    <td>51</td>
+    <td>+1</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td class="imgCell"><img src="images/camels_192.jpg"></td>
+    <td>Cuban Camels</td>
+    <td>61</td>
+    <td>60</td>
+    <td>56</td>
+    <td>36</td>
+    <td>50</td>
+    <td>63</td>
+    <td>3.26</td>
+    <td>50</td>
+    <td>55</td>
+    <td>47</td>
+    <td>36</td>
+    <td>51</td>
+    <td>58</td>
+    <td>2.98</td>
+    <td>6.23</td>
+    <td>6.04</td>
+    <td><span class="green">+0.19</span></td>
+    <td>52</td>
+    <td>50</td>
+    <td>+2</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td class="imgCell"><img src="images/battaillon_192.jpg"></td>
+    <td>BATtaillon <span class="green">&#8593;</span></td>
+    <td>46</td>
+    <td>40</td>
+    <td>37</td>
+    <td>46</td>
+    <td>57</td>
+    <td>41</td>
+    <td>2.67</td>
+    <td>60</td>
+    <td>65</td>
+    <td>53</td>
+    <td>30</td>
+    <td>46</td>
+    <td>45</td>
+    <td>2.99</td>
+    <td>5.67</td>
+    <td>5.46</td>
+    <td><span class="green">+0.21</span></td>
+    <td>47</td>
+    <td>48</td>
+    <td>-1</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td class="imgCell"><img src="images/possums_192.jpg"></td>
+    <td>Pissed Off Possums <span class="red">&#8595;</span></td>
+    <td>33</td>
+    <td>40</td>
+    <td>42</td>
+    <td>59</td>
+    <td>55</td>
+    <td>56</td>
+    <td>2.84</td>
+    <td>54</td>
+    <td>25</td>
+    <td>40</td>
+    <td>44</td>
+    <td>51</td>
+    <td>44</td>
+    <td>2.59</td>
+    <td>5.43</td>
+    <td>5.58</td>
+    <td><span class="red">-0.15</span></td>
+    <td>45</td>
+    <td>49</td>
+    <td>-4</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td class="imgCell"><img src="images/red_hat_100.gif"></td>
+    <td>Three Finger's Ghost</td>
+    <td>55</td>
+    <td>55</td>
+    <td>49</td>
+    <td>59</td>
+    <td>56</td>
+    <td>45</td>
+    <td>3.19</td>
+    <td>49</td>
+    <td>10</td>
+    <td>32</td>
+    <td>44</td>
+    <td>43</td>
+    <td>43</td>
+    <td>2.21</td>
+    <td>5.40</td>
+    <td>5.30</td>
+    <td><span class="green">+0.1</span></td>
+    <td>45</td>
+    <td>40</td>
+    <td>+5</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td class="imgCell"><img src="images/red_jersey_100.gif"></td>
+    <td>Jackie Treehorn</td>
+    <td>41</td>
+    <td>44</td>
+    <td>54</td>
+    <td>42</td>
+    <td>34</td>
+    <td>38</td>
+    <td>2.53</td>
+    <td>47</td>
+    <td>76</td>
+    <td>45</td>
+    <td>21</td>
+    <td>28</td>
+    <td>28</td>
+    <td>2.44</td>
+    <td>4.98</td>
+    <td>5.20</td>
+    <td><span class="red">-0.22</span></td>
+    <td>41</td>
+    <td>43</td>
+    <td>-2</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td class="imgCell"><img src="images/red_jersey_100.gif"></td>
+    <td>Isotopes</td>
+    <td>5</td>
+    <td>16</td>
+    <td>16</td>
+    <td>58</td>
+    <td>44</td>
+    <td>28</td>
+    <td>1.67</td>
+    <td>35</td>
+    <td>28</td>
+    <td>22</td>
+    <td>71</td>
+    <td>59</td>
+    <td>56</td>
+    <td>2.69</td>
+    <td>4.36</td>
+    <td>4.34</td>
+    <td><span class="green">+0.02</span></td>
+    <td>36</td>
+    <td>30</td>
+    <td>+6</td>
+  </tr>
+</table>
+
+<table class="averages withGrid roto scroll-x">
+  <tr class="head">
+    <td colspan="2" rowspan="2">Averages per Week</td>
+    <td colspan="12">Season <sup>&#8225;</sup></td>
+    <td colspan="12">Weeks 17 &ndash; 19</td>
+  </tr>
+  <tr class="head">
+    <td>R</td>
+    <td>HR</td>
+    <td>RBI</td>
+    <td>AVG</td>
+    <td>OBP</td>
+    <td>NSB</td>
+    <td>W</td>
+    <td>SV</td>
+    <td>K</td>
+    <td>HLD</td>
+    <td>ERA</td>
+    <td>WHIP</td>
+    <td>R</td>
+    <td>HR</td>
+    <td>RBI</td>
+    <td>AVG</td>
+    <td>OBP <sup>&#8224;</sup></td>
+    <td>NSB</td>
+    <td>W</td>
+    <td>SV</td>
+    <td>K</td>
+    <td>HLD</td>
+    <td>ERA</td>
+    <td>WHIP</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/battaillon_192.jpg"></td>
+    <td>BATtaillon</td>
+    <td>30.0</td>
+    <td>8.1</td>
+    <td>26.2</td>
+    <td>.270</td>
+    <td>.353</td>
+    <td>1.7</td>
+    <td>3.9</td>
+    <td>4.1</td>
+    <td>56.6</td>
+    <td>1.0</td>
+    <td>4.13</td>
+    <td>1.31</td>
+    <td>31.7</td>
+    <td>9.3</td>
+    <td>27.3</td>
+    <td>.259</td>
+    <td>.362</td>
+    <td>2.3</td>
+    <td>4.7</td>
+    <td>3.7</td>
+    <td>69.3</td>
+    <td>2.0</td>
+    <td>3.44</td>
+    <td>1.27</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/orange_black_hat_100.gif"></td>
+    <td>Conquistadors</td>
+    <td>32.6</td>
+    <td>11.4</td>
+    <td>31.6</td>
+    <td>.269</td>
+    <td>.347</td>
+    <td>1.6</td>
+    <td>3.3</td>
+    <td>3.9</td>
+    <td>61.3</td>
+    <td>2.6</td>
+    <td>3.70</td>
+    <td>1.20</td>
+    <td>32.0</td>
+    <td>12.7</td>
+    <td>31.0</td>
+    <td>.276</td>
+    <td>.364</td>
+    <td>3.0</td>
+    <td>4.0</td>
+    <td>2.3</td>
+    <td>64.7</td>
+    <td>3.3</td>
+    <td>4.47</td>
+    <td>1.22</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/camels_192.jpg"></td>
+    <td>Cuban Camels</td>
+    <td>33.0</td>
+    <td>10.2</td>
+    <td>30.8</td>
+    <td>.262</td>
+    <td>.347</td>
+    <td>3.4</td>
+    <td>3.4</td>
+    <td>3.5</td>
+    <td>54.1</td>
+    <td>1.3</td>
+    <td>3.98</td>
+    <td>1.22</td>
+    <td>35.0</td>
+    <td>14.0</td>
+    <td>38.3</td>
+    <td>.273</td>
+    <td>.351</td>
+    <td>4.0</td>
+    <td>3.7</td>
+    <td>3.7</td>
+    <td>47.7</td>
+    <td>1.0</td>
+    <td>3.19</td>
+    <td>1.13</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/red_jersey_100.gif"></td>
+    <td>Isotopes</td>
+    <td>17.7</td>
+    <td>5.7</td>
+    <td>20.2</td>
+    <td>.279</td>
+    <td>.340</td>
+    <td>0.8</td>
+    <td>2.7</td>
+    <td>1.9</td>
+    <td>44.1</td>
+    <td>3.2</td>
+    <td>3.79</td>
+    <td>1.26</td>
+    <td>14.3</td>
+    <td>4.3</td>
+    <td>14.3</td>
+    <td>.265</td>
+    <td>.339</td>
+    <td>-0.7</td>
+    <td>3.0</td>
+    <td>3.7</td>
+    <td>41.7</td>
+    <td>2.3</td>
+    <td>3.21</td>
+    <td>1.00</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/red_jersey_100.gif"></td>
+    <td>Jackie Treehorn</td>
+    <td>28.8</td>
+    <td>8.5</td>
+    <td>30.3</td>
+    <td>.265</td>
+    <td>.332</td>
+    <td>1.6</td>
+    <td>3.3</td>
+    <td>4.8</td>
+    <td>53.3</td>
+    <td>0.6</td>
+    <td>4.89</td>
+    <td>1.41</td>
+    <td>29.3</td>
+    <td>9.3</td>
+    <td>23.7</td>
+    <td>.239</td>
+    <td>.306</td>
+    <td>2.0</td>
+    <td>3.3</td>
+    <td>3.7</td>
+    <td>58.3</td>
+    <td>0.7</td>
+    <td>5.39</td>
+    <td>1.45</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/lnt_v2_100.png"></td>
+    <td>Lightning N Thunder</td>
+    <td>29.8</td>
+    <td>8.1</td>
+    <td>28.5</td>
+    <td>.272</td>
+    <td>.340</td>
+    <td>2.1</td>
+    <td>4.1</td>
+    <td>3.7</td>
+    <td>59.5</td>
+    <td>3.2</td>
+    <td>3.93</td>
+    <td>1.25</td>
+    <td>31.7</td>
+    <td>7.0</td>
+    <td>27.0</td>
+    <td>.279</td>
+    <td>.339</td>
+    <td>2.0</td>
+    <td>2.3</td>
+    <td>5.7</td>
+    <td>59.3</td>
+    <td>3.7</td>
+    <td>4.07</td>
+    <td>1.38</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/mrobz_v3_100.png"></td>
+    <td>Mookies</td>
+    <td>35.4</td>
+    <td>10.2</td>
+    <td>33.8</td>
+    <td>.269</td>
+    <td>.350</td>
+    <td>3.3</td>
+    <td>4.1</td>
+    <td>3.9</td>
+    <td>61.3</td>
+    <td>2.6</td>
+    <td>3.39</td>
+    <td>1.20</td>
+    <td>30.3</td>
+    <td>11.3</td>
+    <td>30.7</td>
+    <td>.232</td>
+    <td>.336</td>
+    <td>1.3</td>
+    <td>4.7</td>
+    <td>7.3</td>
+    <td>63.3</td>
+    <td>3.0</td>
+    <td>3.49</td>
+    <td>1.19</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/possums_192.jpg"></td>
+    <td>Pissed Off Possums</td>
+    <td>26.7</td>
+    <td>8.1</td>
+    <td>26.6</td>
+    <td>.284</td>
+    <td>.353</td>
+    <td>2.7</td>
+    <td>3.7</td>
+    <td>1.7</td>
+    <td>51.1</td>
+    <td>1.7</td>
+    <td>4.00</td>
+    <td>1.31</td>
+    <td>24.7</td>
+    <td>7.3</td>
+    <td>22.3</td>
+    <td>.285</td>
+    <td>.354</td>
+    <td>3.3</td>
+    <td>2.3</td>
+    <td>2.3</td>
+    <td>52.0</td>
+    <td>2.7</td>
+    <td>4.38</td>
+    <td>1.45</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/blue_sox_192.jpg"></td>
+    <td>South Bend Blue Sox</td>
+    <td>33.0</td>
+    <td>9.8</td>
+    <td>33.5</td>
+    <td>.275</td>
+    <td>.341</td>
+    <td>3.2</td>
+    <td>3.1</td>
+    <td>4.3</td>
+    <td>57.8</td>
+    <td>2.0</td>
+    <td>4.35</td>
+    <td>1.33</td>
+    <td>34.0</td>
+    <td>7.3</td>
+    <td>29.7</td>
+    <td>.295</td>
+    <td>.361</td>
+    <td>5.0</td>
+    <td>2.7</td>
+    <td>3.7</td>
+    <td>62.3</td>
+    <td>3.0</td>
+    <td>4.59</td>
+    <td>1.28</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/sultans_v2_192.jpg"></td>
+    <td>Sultans of Dallas</td>
+    <td>32.9</td>
+    <td>10.1</td>
+    <td>29.3</td>
+    <td>.272</td>
+    <td>.355</td>
+    <td>2.2</td>
+    <td>3.5</td>
+    <td>3.2</td>
+    <td>61.7</td>
+    <td>0.9</td>
+    <td>4.17</td>
+    <td>1.27</td>
+    <td>30.3</td>
+    <td>11.7</td>
+    <td>31.0</td>
+    <td>.275</td>
+    <td>.347</td>
+    <td>3.7</td>
+    <td>2.3</td>
+    <td>0.7</td>
+    <td>50.0</td>
+    <td>1.7</td>
+    <td>5.33</td>
+    <td>1.39</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/red_hat_100.gif"></td>
+    <td>Three Finger's Ghost</td>
+    <td>31.8</td>
+    <td>9.7</td>
+    <td>29.0</td>
+    <td>.279</td>
+    <td>.352</td>
+    <td>1.9</td>
+    <td>3.4</td>
+    <td>0.7</td>
+    <td>48.0</td>
+    <td>1.7</td>
+    <td>4.46</td>
+    <td>1.34</td>
+    <td>32.3</td>
+    <td>11.7</td>
+    <td>31.0</td>
+    <td>.282</td>
+    <td>.365</td>
+    <td>0.3</td>
+    <td>4.3</td>
+    <td>2.0</td>
+    <td>48.0</td>
+    <td>1.7</td>
+    <td>3.78</td>
+    <td>1.35</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/blue_black_hat_100.gif"></td>
+    <td>Washington McNasty</td>
+    <td>34.2</td>
+    <td>10.6</td>
+    <td>31.5</td>
+    <td>.278</td>
+    <td>.351</td>
+    <td>3.9</td>
+    <td>2.9</td>
+    <td>2.9</td>
+    <td>56.2</td>
+    <td>2.9</td>
+    <td>4.25</td>
+    <td>1.31</td>
+    <td>42.3</td>
+    <td>15.3</td>
+    <td>39.7</td>
+    <td>.299</td>
+    <td>.367</td>
+    <td>7.0</td>
+    <td>1.7</td>
+    <td>2.7</td>
+    <td>64.7</td>
+    <td>1.3</td>
+    <td>4.56</td>
+    <td>1.43</td>
+  </tr>
+  <tr>
+    <td colspan="2">Max</td>
+    <td>35.4</td>
+    <td>11.4</td>
+    <td>33.8</td>
+    <td>.284</td>
+    <td>.355</td>
+    <td>3.9</td>
+    <td>4.1</td>
+    <td>4.8</td>
+    <td>61.7</td>
+    <td>3.2</td>
+    <td>4.89</td>
+    <td>1.41</td>
+    <td>42.3</td>
+    <td>15.3</td>
+    <td>39.7</td>
+    <td>.299</td>
+    <td>.367</td>
+    <td>7.0</td>
+    <td>4.7</td>
+    <td>7.3</td>
+    <td>69.3</td>
+    <td>3.7</td>
+    <td>5.39</td>
+    <td>1.45</td>
+  </tr>
+  <tr>
+    <td colspan="2">Median</td>
+    <td>32.2</td>
+    <td>9.7</td>
+    <td>29.8</td>
+    <td>.272</td>
+    <td>.349</td>
+    <td>2.2</td>
+    <td>3.4</td>
+    <td>3.6</td>
+    <td>56.4</td>
+    <td>1.8</td>
+    <td>4.07</td>
+    <td>1.29</td>
+    <td>31.7</td>
+    <td>10.3</td>
+    <td>30.2</td>
+    <td>.275</td>
+    <td>.353</td>
+    <td>2.7</td>
+    <td>3.2</td>
+    <td>3.7</td>
+    <td>58.8</td>
+    <td>2.2</td>
+    <td>4.22</td>
+    <td>1.32</td>
+  </tr>
+  <tr>
+    <td colspan="2">Min</td>
+    <td>17.7</td>
+    <td>5.7</td>
+    <td>20.2</td>
+    <td>.262</td>
+    <td>.332</td>
+    <td>0.8</td>
+    <td>2.7</td>
+    <td>0.7</td>
+    <td>44.1</td>
+    <td>0.6</td>
+    <td>3.39</td>
+    <td>1.20</td>
+    <td>14.3</td>
+    <td>4.3</td>
+    <td>14.3</td>
+    <td>.232</td>
+    <td>.306</td>
+    <td>-0.7</td>
+    <td>1.7</td>
+    <td>0.7</td>
+    <td>41.7</td>
+    <td>0.7</td>
+    <td>3.19</td>
+    <td>1.00</td>
+  </tr>
+</table>
+
+</div>
+<!--end Week 19-->
+
+<!--begin Week 16-->
+<div id="tab-wk16" class="tab">
+
+<table class="standings withGrid roto scroll-x">
+  <tr class="head">
+    <td colspan="3" rowspan="2">Through Week 16<br>(14 weeks)</td>
+    <td colspan="6">% chance of winning category</td>
+    <td rowspan="2">Batting*</td>
+    <td colspan="6">% chance of winning category</td>
+    <td rowspan="2">Pitching*</td>
+    <td rowspan="2">Total*<br>(# cats)</td>
+    <td rowspan="2">Week 12</td>
+    <td rowspan="2">Change</td>
+    <td rowspan="2">Average**<br>(win%)</td>
+    <td rowspan="2">H2H%</td>
+    <td rowspan="2">Roto &ndash;<br>H2H</td>
+  </tr>
+  <tr class="head">
+    <td>R</td>
+    <td>HR</td>
+    <td>RBI</td>
+    <td>AVG</td>
+    <td>OBP</td>
+    <td>NSB</td>
+    <td>W</td>
+    <td>SV</td>
+    <td>K</td>
+    <td>HLD</td>
+    <td>ERA</td>
+    <td>WHIP</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td class="imgCell"><img src="images/mrobz_v3_100.png"></td>
+    <td>Mookies</td>
+    <td>72</td>
+    <td>60</td>
+    <td>68</td>
+    <td>52</td>
+    <td>55</td>
+    <td>67</td>
+    <td>3.75</td>
+    <td>58</td>
+    <td>51</td>
+    <td>64</td>
+    <td>64</td>
+    <td>71</td>
+    <td>65</td>
+    <td>3.73</td>
+    <td>7.48</td>
+    <td>8.23</td>
+    <td><span class="red">-0.75</span></td>
+    <td>62</td>
+    <td>64</td>
+    <td>-2</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td class="imgCell"><img src="images/orange_black_hat_100.gif"></td>
+    <td>Conquistadors <span class="green">&#8593;</span></td>
+    <td>60</td>
+    <td>70</td>
+    <td>60</td>
+    <td>46</td>
+    <td>50</td>
+    <td>34</td>
+    <td>3.21</td>
+    <td>43</td>
+    <td>67</td>
+    <td>62</td>
+    <td>62</td>
+    <td>65</td>
+    <td>66</td>
+    <td>3.65</td>
+    <td>6.86</td>
+    <td>6.48</td>
+    <td><span class="green">+0.38</span></td>
+    <td>57</td>
+    <td>64</td>
+    <td>-7</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td class="imgCell"><img src="images/sultans_v2_192.jpg"></td>
+    <td>Sultans of Dallas <span class="red">&#8595;</span></td>
+    <td>65</td>
+    <td>58</td>
+    <td>49</td>
+    <td>51</td>
+    <td>61</td>
+    <td>46</td>
+    <td>3.28</td>
+    <td>55</td>
+    <td>59</td>
+    <td>70</td>
+    <td>30</td>
+    <td>52</td>
+    <td>55</td>
+    <td>3.21</td>
+    <td>6.49</td>
+    <td>7.14</td>
+    <td><span class="red">-0.65</span></td>
+    <td>54</td>
+    <td>54</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td class="imgCell"><img src="images/blue_black_hat_100.gif"></td>
+    <td>Washington McNasty <span class="green">&#8593;</span></td>
+    <td>59</td>
+    <td>56</td>
+    <td>53</td>
+    <td>51</td>
+    <td>52</td>
+    <td>66</td>
+    <td>3.36</td>
+    <td>45</td>
+    <td>46</td>
+    <td>49</td>
+    <td>73</td>
+    <td>47</td>
+    <td>51</td>
+    <td>3.11</td>
+    <td>6.48</td>
+    <td>6.29</td>
+    <td><span class="green">+0.19</span></td>
+    <td>54</td>
+    <td>58</td>
+    <td>-4</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td class="imgCell"><img src="images/lnt_v2_100.png"></td>
+    <td>Lightning N Thunder <span class="green">&#8593;</span></td>
+    <td>45</td>
+    <td>43</td>
+    <td>48</td>
+    <td>48</td>
+    <td>43</td>
+    <td>49</td>
+    <td>2.75</td>
+    <td>67</td>
+    <td>53</td>
+    <td>62</td>
+    <td>73</td>
+    <td>53</td>
+    <td>60</td>
+    <td>3.67</td>
+    <td>6.42</td>
+    <td>6.14</td>
+    <td><span class="green">+0.28</span></td>
+    <td>54</td>
+    <td>53</td>
+    <td>+1</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td class="imgCell"><img src="images/blue_sox_192.jpg"></td>
+    <td>South Bend Blue Sox <span class="red">&#8595;</span></td>
+    <td>58</td>
+    <td>62</td>
+    <td>67</td>
+    <td>47</td>
+    <td>41</td>
+    <td>59</td>
+    <td>3.33</td>
+    <td>46</td>
+    <td>69</td>
+    <td>55</td>
+    <td>49</td>
+    <td>44</td>
+    <td>38</td>
+    <td>3.01</td>
+    <td>6.34</td>
+    <td>6.29</td>
+    <td><span class="green">+0.05</span></td>
+    <td>53</td>
+    <td>50</td>
+    <td>+3</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td class="imgCell"><img src="images/camels_192.jpg"></td>
+    <td>Cuban Camels</td>
+    <td>59</td>
+    <td>54</td>
+    <td>50</td>
+    <td>32</td>
+    <td>49</td>
+    <td>64</td>
+    <td>3.09</td>
+    <td>48</td>
+    <td>55</td>
+    <td>51</td>
+    <td>38</td>
+    <td>47</td>
+    <td>55</td>
+    <td>2.95</td>
+    <td>6.04</td>
+    <td>5.67</td>
+    <td><span class="green">+0.37</span></td>
+    <td>50</td>
+    <td>46</td>
+    <td>+4</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td class="imgCell"><img src="images/possums_192.jpg"></td>
+    <td>Pissed Off Possums <span class="green">&#8593;</span></td>
+    <td>35</td>
+    <td>43</td>
+    <td>44</td>
+    <td>57</td>
+    <td>55</td>
+    <td>55</td>
+    <td>2.89</td>
+    <td>58</td>
+    <td>25</td>
+    <td>40</td>
+    <td>41</td>
+    <td>55</td>
+    <td>50</td>
+    <td>2.69</td>
+    <td>5.58</td>
+    <td>5.25</td>
+    <td><span class="green">+0.33</span></td>
+    <td>47</td>
+    <td>48</td>
+    <td>-1</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td class="imgCell"><img src="images/battaillon_192.jpg"></td>
+    <td>BATtaillon</td>
+    <td>45</td>
+    <td>39</td>
+    <td>36</td>
+    <td>48</td>
+    <td>56</td>
+    <td>40</td>
+    <td>2.64</td>
+    <td>56</td>
+    <td>66</td>
+    <td>48</td>
+    <td>27</td>
+    <td>42</td>
+    <td>43</td>
+    <td>2.83</td>
+    <td>5.46</td>
+    <td>5.56</td>
+    <td><span class="red">-0.10</span></td>
+    <td>46</td>
+    <td>46</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td class="imgCell"><img src="images/red_hat_100.gif"></td>
+    <td>Three Finger's Ghost <span class="red">&#8595;</span></td>
+    <td>55</td>
+    <td>53</td>
+    <td>47</td>
+    <td>58</td>
+    <td>54</td>
+    <td>51</td>
+    <td>3.18</td>
+    <td>44</td>
+    <td>7</td>
+    <td>33</td>
+    <td>46</td>
+    <td>40</td>
+    <td>42</td>
+    <td>2.12</td>
+    <td>5.30</td>
+    <td>5.57</td>
+    <td><span class="red">-0.27</span></td>
+    <td>44</td>
+    <td>38</td>
+    <td>+6</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td class="imgCell"><img src="images/red_jersey_100.gif"></td>
+    <td>Jackie Treehorn</td>
+    <td>41</td>
+    <td>44</td>
+    <td>60</td>
+    <td>48</td>
+    <td>40</td>
+    <td>38</td>
+    <td>2.71</td>
+    <td>46</td>
+    <td>79</td>
+    <td>43</td>
+    <td>23</td>
+    <td>30</td>
+    <td>29</td>
+    <td>2.49</td>
+    <td>5.20</td>
+    <td>4.88</td>
+    <td><span class="green">+0.32</span></td>
+    <td>43</td>
+    <td>48</td>
+    <td>-5</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td class="imgCell"><img src="images/red_jersey_100.gif"></td>
+    <td>Isotopes</td>
+    <td>6</td>
+    <td>19</td>
+    <td>18</td>
+    <td>61</td>
+    <td>45</td>
+    <td>31</td>
+    <td>1.81</td>
+    <td>33</td>
+    <td>22</td>
+    <td>24</td>
+    <td>73</td>
+    <td>55</td>
+    <td>46</td>
+    <td>2.53</td>
+    <td>4.34</td>
+    <td>4.51</td>
+    <td><span class="red">-0.17</span></td>
+    <td>36</td>
+    <td>30</td>
+    <td>+6</td>
+  </tr>
+</table>
+
+<table class="averages withGrid roto scroll-x">
+  <tr class="head">
+    <td colspan="2" rowspan="2">Averages per Week</td>
+    <td colspan="12">Season <sup>&#8225;</sup></td>
+    <td colspan="12">Weeks 13 &ndash; 16</td>
+  </tr>
+  <tr class="head">
+    <td>R</td>
+    <td>HR</td>
+    <td>RBI</td>
+    <td>AVG</td>
+    <td>OBP</td>
+    <td>NSB</td>
+    <td>W</td>
+    <td>SV</td>
+    <td>K</td>
+    <td>HLD</td>
+    <td>ERA</td>
+    <td>WHIP</td>
+    <td>R</td>
+    <td>HR</td>
+    <td>RBI</td>
+    <td>AVG</td>
+    <td>OBP <sup>&#8224;</sup></td>
+    <td>NSB</td>
+    <td>W</td>
+    <td>SV</td>
+    <td>K</td>
+    <td>HLD</td>
+    <td>ERA</td>
+    <td>WHIP</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/battaillon_192.jpg"></td>
+    <td>BATtaillon</td>
+    <td>29.7</td>
+    <td>7.9</td>
+    <td>25.9</td>
+    <td>.272</td>
+    <td>.351</td>
+    <td>1.5</td>
+    <td>3.8</td>
+    <td>4.1</td>
+    <td>53.9</td>
+    <td>0.8</td>
+    <td>4.29</td>
+    <td>1.32</td>
+    <td>30.3</td>
+    <td>8.5</td>
+    <td>27.3</td>
+    <td>.257</td>
+    <td>.339</td>
+    <td>2.5</td>
+    <td>4.5</td>
+    <td>4.3</td>
+    <td>64.5</td>
+    <td>1.5</td>
+    <td>3.24</td>
+    <td>1.26</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/orange_black_hat_100.gif"></td>
+    <td>Conquistadors</td>
+    <td>32.8</td>
+    <td>11.2</td>
+    <td>31.7</td>
+    <td>.268</td>
+    <td>.344</td>
+    <td>1.3</td>
+    <td>3.1</td>
+    <td>4.3</td>
+    <td>60.6</td>
+    <td>2.5</td>
+    <td>3.53</td>
+    <td>1.20</td>
+    <td>39.5</td>
+    <td>14.5</td>
+    <td>38.8</td>
+    <td>.273</td>
+    <td>.344</td>
+    <td>1.5</td>
+    <td>5.0</td>
+    <td>4.3</td>
+    <td>77.0</td>
+    <td>2.5</td>
+    <td>2.84</td>
+    <td>1.11</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/camels_192.jpg"></td>
+    <td>Cuban Camels</td>
+    <td>32.6</td>
+    <td>9.4</td>
+    <td>29.2</td>
+    <td>.260</td>
+    <td>.346</td>
+    <td>3.3</td>
+    <td>3.4</td>
+    <td>3.4</td>
+    <td>55.4</td>
+    <td>1.3</td>
+    <td>4.15</td>
+    <td>1.24</td>
+    <td>34.8</td>
+    <td>10.0</td>
+    <td>35.5</td>
+    <td>.265</td>
+    <td>.352</td>
+    <td>4.3</td>
+    <td>4.5</td>
+    <td>5.5</td>
+    <td>73.8</td>
+    <td>1.0</td>
+    <td>3.46</td>
+    <td>1.12</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/red_jersey_100.gif"></td>
+    <td>Isotopes</td>
+    <td>18.4</td>
+    <td>5.9</td>
+    <td>21.4</td>
+    <td>.281</td>
+    <td>.340</td>
+    <td>1.1</td>
+    <td>2.7</td>
+    <td>1.5</td>
+    <td>44.6</td>
+    <td>3.4</td>
+    <td>3.89</td>
+    <td>1.31</td>
+    <td>14.0</td>
+    <td>5.3</td>
+    <td>22.3</td>
+    <td>.277</td>
+    <td>.335</td>
+    <td>0.5</td>
+    <td>2.8</td>
+    <td>2.0</td>
+    <td>51.5</td>
+    <td>3.8</td>
+    <td>3.47</td>
+    <td>1.26</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/red_jersey_100.gif"></td>
+    <td>Jackie Treehorn</td>
+    <td>28.7</td>
+    <td>8.3</td>
+    <td>31.7</td>
+    <td>.270</td>
+    <td>.337</td>
+    <td>1.5</td>
+    <td>3.2</td>
+    <td>5.0</td>
+    <td>52.3</td>
+    <td>0.6</td>
+    <td>4.79</td>
+    <td>1.40</td>
+    <td>35.5</td>
+    <td>11.5</td>
+    <td>37.5</td>
+    <td>.275</td>
+    <td>.337</td>
+    <td>1.8</td>
+    <td>5.0</td>
+    <td>6.0</td>
+    <td>59.3</td>
+    <td>0.8</td>
+    <td>4.36</td>
+    <td>1.37</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/lnt_v2_100.png"></td>
+    <td>Lightning N Thunder</td>
+    <td>29.4</td>
+    <td>8.3</td>
+    <td>28.8</td>
+    <td>.271</td>
+    <td>.340</td>
+    <td>2.1</td>
+    <td>4.4</td>
+    <td>3.3</td>
+    <td>59.6</td>
+    <td>3.1</td>
+    <td>3.90</td>
+    <td>1.22</td>
+    <td>32.8</td>
+    <td>10.3</td>
+    <td>37.0</td>
+    <td>.277</td>
+    <td>.348</td>
+    <td>2.8</td>
+    <td>5.8</td>
+    <td>4.3</td>
+    <td>66.3</td>
+    <td>3.8</td>
+    <td>3.25</td>
+    <td>1.09</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/mrobz_v3_100.png"></td>
+    <td>Mookies</td>
+    <td>36.5</td>
+    <td>10.0</td>
+    <td>34.5</td>
+    <td>.275</td>
+    <td>.352</td>
+    <td>3.7</td>
+    <td>3.9</td>
+    <td>3.2</td>
+    <td>60.9</td>
+    <td>2.6</td>
+    <td>3.37</td>
+    <td>1.20</td>
+    <td>39.8</td>
+    <td>11.0</td>
+    <td>37.3</td>
+    <td>.265</td>
+    <td>.345</td>
+    <td>4.3</td>
+    <td>3.0</td>
+    <td>4.0</td>
+    <td>73.3</td>
+    <td>2.3</td>
+    <td>4.80</td>
+    <td>1.48</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/possums_192.jpg"></td>
+    <td>Pissed Off Possums</td>
+    <td>27.2</td>
+    <td>8.2</td>
+    <td>27.4</td>
+    <td>.283</td>
+    <td>.353</td>
+    <td>2.6</td>
+    <td>3.9</td>
+    <td>1.6</td>
+    <td>51.0</td>
+    <td>1.4</td>
+    <td>3.93</td>
+    <td>1.28</td>
+    <td>30.3</td>
+    <td>9.0</td>
+    <td>33.5</td>
+    <td>.314</td>
+    <td>.377</td>
+    <td>3.5</td>
+    <td>5.0</td>
+    <td>0.5</td>
+    <td>67.5</td>
+    <td>2.3</td>
+    <td>4.04</td>
+    <td>1.29</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/blue_sox_192.jpg"></td>
+    <td>South Bend Blue Sox</td>
+    <td>32.8</td>
+    <td>10.3</td>
+    <td>34.3</td>
+    <td>.271</td>
+    <td>.337</td>
+    <td>2.8</td>
+    <td>3.2</td>
+    <td>4.5</td>
+    <td>56.9</td>
+    <td>1.8</td>
+    <td>4.29</td>
+    <td>1.34</td>
+    <td>39.5</td>
+    <td>13.0</td>
+    <td>40.5</td>
+    <td>.279</td>
+    <td>.342</td>
+    <td>1.8</td>
+    <td>4.3</td>
+    <td>3.0</td>
+    <td>71.3</td>
+    <td>3.3</td>
+    <td>3.97</td>
+    <td>1.24</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/sultans_v2_192.jpg"></td>
+    <td>Sultans of Dallas</td>
+    <td>33.4</td>
+    <td>9.7</td>
+    <td>28.9</td>
+    <td>.272</td>
+    <td>.357</td>
+    <td>1.9</td>
+    <td>3.7</td>
+    <td>3.7</td>
+    <td>64.1</td>
+    <td>0.8</td>
+    <td>3.97</td>
+    <td>1.25</td>
+    <td>35.8</td>
+    <td>10.3</td>
+    <td>31.0</td>
+    <td>.251</td>
+    <td>.337</td>
+    <td>2.5</td>
+    <td>4.3</td>
+    <td>3.8</td>
+    <td>73.5</td>
+    <td>0.0</td>
+    <td>4.38</td>
+    <td>1.31</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/red_hat_100.gif"></td>
+    <td>Three Finger's Ghost</td>
+    <td>31.7</td>
+    <td>9.2</td>
+    <td>28.6</td>
+    <td>.279</td>
+    <td>.349</td>
+    <td>2.3</td>
+    <td>3.2</td>
+    <td>0.4</td>
+    <td>48.0</td>
+    <td>1.7</td>
+    <td>4.62</td>
+    <td>1.34</td>
+    <td>38.3</td>
+    <td>10.8</td>
+    <td>31.3</td>
+    <td>.261</td>
+    <td>.328</td>
+    <td>1.5</td>
+    <td>3.8</td>
+    <td>0.5</td>
+    <td>46.5</td>
+    <td>1.8</td>
+    <td>4.05</td>
+    <td>1.29</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/blue_black_hat_100.gif"></td>
+    <td>Washington McNasty</td>
+    <td>32.5</td>
+    <td>9.6</td>
+    <td>29.9</td>
+    <td>.273</td>
+    <td>.347</td>
+    <td>3.3</td>
+    <td>3.2</td>
+    <td>2.9</td>
+    <td>54.5</td>
+    <td>3.2</td>
+    <td>4.17</td>
+    <td>1.27</td>
+    <td>36.5</td>
+    <td>11.8</td>
+    <td>34.3</td>
+    <td>.269</td>
+    <td>.351</td>
+    <td>1.3</td>
+    <td>5.0</td>
+    <td>3.0</td>
+    <td>74.3</td>
+    <td>2.0</td>
+    <td>3.18</td>
+    <td>1.17</td>
+  </tr>
+  <tr>
+    <td colspan="2">Max</td>
+    <td>36.5</td>
+    <td>11.2</td>
+    <td>34.5</td>
+    <td>.283</td>
+    <td>.357</td>
+    <td>3.7</td>
+    <td>4.4</td>
+    <td>5.0</td>
+    <td>64.1</td>
+    <td>3.4</td>
+    <td>4.79</td>
+    <td>1.40</td>
+    <td>39.8</td>
+    <td>14.5</td>
+    <td>40.5</td>
+    <td>.314</td>
+    <td>.377</td>
+    <td>4.3</td>
+    <td>5.8</td>
+    <td>6.0</td>
+    <td>77.0</td>
+    <td>3.8</td>
+    <td>4.80</td>
+    <td>1.48</td>
+  </tr>
+  <tr>
+    <td colspan="2">Median</td>
+    <td>32.1</td>
+    <td>9.3</td>
+    <td>29.1</td>
+    <td>.272</td>
+    <td>.347</td>
+    <td>2.2</td>
+    <td>3.3</td>
+    <td>3.4</td>
+    <td>55.0</td>
+    <td>1.7</td>
+    <td>4.06</td>
+    <td>1.28</td>
+    <td>35.6</td>
+    <td>10.5</td>
+    <td>34.9</td>
+    <td>.271</td>
+    <td>.343</td>
+    <td>2.1</td>
+    <td>4.5</td>
+    <td>3.9</td>
+    <td>69.4</td>
+    <td>2.1</td>
+    <td>3.72</td>
+    <td>1.26</td>
+  </tr>
+  <tr>
+    <td colspan="2">Min</td>
+    <td>18.4</td>
+    <td>5.9</td>
+    <td>21.4</td>
+    <td>.260</td>
+    <td>.337</td>
+    <td>1.1</td>
+    <td>2.7</td>
+    <td>0.4</td>
+    <td>44.6</td>
+    <td>0.6</td>
+    <td>3.37</td>
+    <td>1.20</td>
+    <td>14.0</td>
+    <td>5.3</td>
+    <td>22.3</td>
+    <td>.251</td>
+    <td>.328</td>
+    <td>0.5</td>
+    <td>2.8</td>
+    <td>0.5</td>
+    <td>46.5</td>
+    <td>0.0</td>
+    <td>2.84</td>
+    <td>1.09</td>
+  </tr>
+</table>
+
+</div>
+<!--end Week 16-->
+
+<!--begin Week 12-->
+<div id="tab-wk12" class="tab">
+
+<table class="standings withGrid roto scroll-x">
+  <tr class="head">
+    <td colspan="3" rowspan="2">Through Week 12<br>(10 weeks)</td>
+    <td colspan="6">% chance of winning category</td>
+    <td rowspan="2">Batting*</td>
+    <td colspan="6">% chance of winning category</td>
+    <td rowspan="2">Pitching*</td>
+    <td rowspan="2">Total*<br>(# cats)</td>
+    <td rowspan="2">Week 9</td>
+    <td rowspan="2">Change</td>
+    <td rowspan="2">Average**<br>(win%)</td>
+    <td rowspan="2">H2H%</td>
+    <td rowspan="2">Roto &ndash;<br>H2H</td>
+  </tr>
+  <tr class="head">
+    <td>R</td>
+    <td>HR</td>
+    <td>RBI</td>
+    <td>AVG</td>
+    <td>OBP</td>
+    <td>NSB</td>
+    <td>W</td>
+    <td>SV</td>
+    <td>K</td>
+    <td>HLD</td>
+    <td>ERA</td>
+    <td>WHIP</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td class="imgCell"><img src="images/mrobz_v3_100.png"></td>
+    <td>Mookies</td>
+    <td>78</td>
+    <td>63</td>
+    <td>72</td>
+    <td>56</td>
+    <td>58</td>
+    <td>67</td>
+    <td>3.94</td>
+    <td>70</td>
+    <td>47</td>
+    <td>70</td>
+    <td>67</td>
+    <td>89</td>
+    <td>85</td>
+    <td>4.29</td>
+    <td>8.23</td>
+    <td>7.89</td>
+    <td><span class="green">+0.34</span></td>
+    <td>69</td>
+    <td>70</td>
+    <td>-1</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td class="imgCell"><img src="images/sultans_v2_192.jpg"></td>
+    <td>Sultans of Dallas</td>
+    <td>69</td>
+    <td>63</td>
+    <td>52</td>
+    <td>58</td>
+    <td>67</td>
+    <td>43</td>
+    <td>3.52</td>
+    <td>60</td>
+    <td>61</td>
+    <td>77</td>
+    <td>36</td>
+    <td>63</td>
+    <td>65</td>
+    <td>3.62</td>
+    <td>7.14</td>
+    <td>7.18</td>
+    <td><span class="red">-0.04</span></td>
+    <td>59</td>
+    <td>54</td>
+    <td>+5</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td class="imgCell"><img src="images/orange_black_hat_100.gif"></td>
+    <td>Conquistadors</td>
+    <td>55</td>
+    <td>67</td>
+    <td>57</td>
+    <td>43</td>
+    <td>48</td>
+    <td>31</td>
+    <td>3.01</td>
+    <td>34</td>
+    <td>68</td>
+    <td>61</td>
+    <td>62</td>
+    <td>60</td>
+    <td>62</td>
+    <td>3.48</td>
+    <td>6.48</td>
+    <td>6.37</td>
+    <td><span class="green">+0.11</span></td>
+    <td>54</td>
+    <td>59</td>
+    <td>-5</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td class="imgCell"><img src="images/blue_sox_192.jpg"></td>
+    <td>South Bend Blue Sox</td>
+    <td>54</td>
+    <td>60</td>
+    <td>69</td>
+    <td>44</td>
+    <td>39</td>
+    <td>65</td>
+    <td>3.33</td>
+    <td>45</td>
+    <td>79</td>
+    <td>53</td>
+    <td>38</td>
+    <td>45</td>
+    <td>35</td>
+    <td>2.96</td>
+    <td>6.29</td>
+    <td>6.08</td>
+    <td><span class="green">+0.21</span></td>
+    <td>52</td>
+    <td>52</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td class="imgCell"><img src="images/blue_black_hat_100.gif"></td>
+    <td>Washington McNasty <span class="green">&#8593;</span></td>
+    <td>59</td>
+    <td>54</td>
+    <td>53</td>
+    <td>52</td>
+    <td>48</td>
+    <td>80</td>
+    <td>3.46</td>
+    <td>36</td>
+    <td>47</td>
+    <td>36</td>
+    <td>81</td>
+    <td>38</td>
+    <td>45</td>
+    <td>2.82</td>
+    <td>6.29</td>
+    <td>6.00</td>
+    <td><span class="green">+0.29</span></td>
+    <td>52</td>
+    <td>61</td>
+    <td>-9</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td class="imgCell"><img src="images/lnt_v2_100.png"></td>
+    <td>Lightning N Thunder</td>
+    <td>45</td>
+    <td>40</td>
+    <td>41</td>
+    <td>44</td>
+    <td>37</td>
+    <td>45</td>
+    <td>2.52</td>
+    <td>67</td>
+    <td>49</td>
+    <td>72</td>
+    <td>72</td>
+    <td>49</td>
+    <td>53</td>
+    <td>3.62</td>
+    <td>6.14</td>
+    <td>6.00</td>
+    <td><span class="green">+0.14</span></td>
+    <td>51</td>
+    <td>50</td>
+    <td>+1</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td class="imgCell"><img src="images/camels_192.jpg"></td>
+    <td>Cuban Camels <span class="green">&#8593;</span></td>
+    <td>64</td>
+    <td>58</td>
+    <td>46</td>
+    <td>30</td>
+    <td>46</td>
+    <td>59</td>
+    <td>3.04</td>
+    <td>47</td>
+    <td>44</td>
+    <td>42</td>
+    <td>42</td>
+    <td>42</td>
+    <td>46</td>
+    <td>2.63</td>
+    <td>5.67</td>
+    <td>5.74</td>
+    <td><span class="red">-0.07</span></td>
+    <td>47</td>
+    <td>48</td>
+    <td>-1</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td class="imgCell"><img src="images/red_hat_100.gif"></td>
+    <td>Three Finger's Ghost <span class="red">&#8595;</span></td>
+    <td>50</td>
+    <td>53</td>
+    <td>50</td>
+    <td>65</td>
+    <td>62</td>
+    <td>56</td>
+    <td>3.35</td>
+    <td>47</td>
+    <td>7</td>
+    <td>44</td>
+    <td>46</td>
+    <td>37</td>
+    <td>42</td>
+    <td>2.22</td>
+    <td>5.57</td>
+    <td>6.06</td>
+    <td><span class="red">-0.49</span></td>
+    <td>46</td>
+    <td>39</td>
+    <td>+7</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td class="imgCell"><img src="images/battaillon_192.jpg"></td>
+    <td>BATtaillon <span class="red">&#8595;</span></td>
+    <td>51</td>
+    <td>41</td>
+    <td>40</td>
+    <td>56</td>
+    <td>61</td>
+    <td>35</td>
+    <td>2.84</td>
+    <td>59</td>
+    <td>67</td>
+    <td>48</td>
+    <td>23</td>
+    <td>34</td>
+    <td>41</td>
+    <td>2.73</td>
+    <td>5.56</td>
+    <td>5.85</td>
+    <td><span class="red">-0.29</span></td>
+    <td>46</td>
+    <td>43</td>
+    <td>+3</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td class="imgCell"><img src="images/possums_192.jpg"></td>
+    <td>Pissed Off Possums</td>
+    <td>33</td>
+    <td>44</td>
+    <td>40</td>
+    <td>46</td>
+    <td>47</td>
+    <td>49</td>
+    <td>2.60</td>
+    <td>58</td>
+    <td>32</td>
+    <td>28</td>
+    <td>35</td>
+    <td>60</td>
+    <td>52</td>
+    <td>2.66</td>
+    <td>5.25</td>
+    <td>5.42</td>
+    <td><span class="red">-0.17</span></td>
+    <td>44</td>
+    <td>43</td>
+    <td>+1</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td class="imgCell"><img src="images/red_jersey_100.gif"></td>
+    <td>Jackie Treehorn</td>
+    <td>33</td>
+    <td>34</td>
+    <td>59</td>
+    <td>44</td>
+    <td>39</td>
+    <td>36</td>
+    <td>2.45</td>
+    <td>38</td>
+    <td>79</td>
+    <td>47</td>
+    <td>23</td>
+    <td>28</td>
+    <td>29</td>
+    <td>2.43</td>
+    <td>4.88</td>
+    <td>5.03</td>
+    <td><span class="red">-0.15</span></td>
+    <td>41</td>
+    <td>51</td>
+    <td>-10</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td class="imgCell"><img src="images/red_jersey_100.gif"></td>
+    <td>Isotopes</td>
+    <td>9</td>
+    <td>23</td>
+    <td>21</td>
+    <td>61</td>
+    <td>48</td>
+    <td>34</td>
+    <td>1.97</td>
+    <td>40</td>
+    <td>19</td>
+    <td>22</td>
+    <td>72</td>
+    <td>55</td>
+    <td>45</td>
+    <td>2.54</td>
+    <td>4.51</td>
+    <td>4.36</td>
+    <td><span class="green">+0.15</span></td>
+    <td>38</td>
+    <td>30</td>
+    <td>+8</td>
+  </tr>
+</table>
+
+<table class="averages withGrid roto scroll-x">
+  <tr class="head">
+    <td colspan="2" rowspan="2">Averages per Week</td>
+    <td colspan="12">Season</td>
+    <td colspan="12">Weeks 10 &ndash; 12</td>
+  </tr>
+  <tr class="head">
+    <td>R</td>
+    <td>HR</td>
+    <td>RBI</td>
+    <td>AVG</td>
+    <td>OBP</td>
+    <td>NSB</td>
+    <td>W</td>
+    <td>SV</td>
+    <td>K</td>
+    <td>HLD</td>
+    <td>ERA</td>
+    <td>WHIP</td>
+    <td>R</td>
+    <td>HR</td>
+    <td>RBI</td>
+    <td>AVG</td>
+    <td>OBP <sup>&#8224;</sup></td>
+    <td>NSB</td>
+    <td>W</td>
+    <td>SV</td>
+    <td>K</td>
+    <td>HLD</td>
+    <td>ERA</td>
+    <td>WHIP</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/battaillon_192.jpg"></td>
+    <td>BATtaillon</td>
+    <td>30.9</td>
+    <td>8.0</td>
+    <td>26.7</td>
+    <td>.279</td>
+    <td>.356</td>
+    <td>1.2</td>
+    <td>3.7</td>
+    <td>4.3</td>
+    <td>52.4</td>
+    <td>0.6</td>
+    <td>4.78</td>
+    <td>1.34</td>
+    <td>31.7</td>
+    <td>9.0</td>
+    <td>28.7</td>
+    <td>.284</td>
+    <td>.358</td>
+    <td>0.0</td>
+    <td>2.7</td>
+    <td>5.0</td>
+    <td>48.0</td>
+    <td>0.3</td>
+    <td>6.10</td>
+    <td>1.43</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/orange_black_hat_100.gif"></td>
+    <td>Conquistadors</td>
+    <td>31.7</td>
+    <td>10.4</td>
+    <td>30.5</td>
+    <td>.265</td>
+    <td>.344</td>
+    <td>1.3</td>
+    <td>2.5</td>
+    <td>4.5</td>
+    <td>57.0</td>
+    <td>2.6</td>
+    <td>3.86</td>
+    <td>1.24</td>
+    <td>36.0</td>
+    <td>10.7</td>
+    <td>30.7</td>
+    <td>.279</td>
+    <td>.356</td>
+    <td>1.7</td>
+    <td>3.3</td>
+    <td>4.0</td>
+    <td>54.0</td>
+    <td>2.3</td>
+    <td>4.24</td>
+    <td>1.23</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/camels_192.jpg"></td>
+    <td>Cuban Camels</td>
+    <td>33.3</td>
+    <td>9.6</td>
+    <td>28.2</td>
+    <td>.258</td>
+    <td>.343</td>
+    <td>3.1</td>
+    <td>3.1</td>
+    <td>2.8</td>
+    <td>50.9</td>
+    <td>1.5</td>
+    <td>4.53</td>
+    <td>1.31</td>
+    <td>33.0</td>
+    <td>9.0</td>
+    <td>30.0</td>
+    <td>.259</td>
+    <td>.341</td>
+    <td>0.7</td>
+    <td>3.7</td>
+    <td>2.7</td>
+    <td>58.0</td>
+    <td>1.3</td>
+    <td>5.26</td>
+    <td>1.25</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/red_jersey_100.gif"></td>
+    <td>Isotopes</td>
+    <td>21.1</td>
+    <td>6.5</td>
+    <td>22.1</td>
+    <td>.282</td>
+    <td>.342</td>
+    <td>1.4</td>
+    <td>2.8</td>
+    <td>1.4</td>
+    <td>44.1</td>
+    <td>3.4</td>
+    <td>4.08</td>
+    <td>1.33</td>
+    <td>18.0</td>
+    <td>5.7</td>
+    <td>17.3</td>
+    <td>.298</td>
+    <td>.360</td>
+    <td>1.0</td>
+    <td>3.0</td>
+    <td>1.7</td>
+    <td>45.7</td>
+    <td>4.7</td>
+    <td>3.90</td>
+    <td>1.32</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/red_jersey_100.gif"></td>
+    <td>Jackie Treehorn</td>
+    <td>27.4</td>
+    <td>7.5</td>
+    <td>31.0</td>
+    <td>.268</td>
+    <td>.337</td>
+    <td>1.5</td>
+    <td>2.7</td>
+    <td>4.9</td>
+    <td>52.1</td>
+    <td>0.6</td>
+    <td>4.98</td>
+    <td>1.42</td>
+    <td>29.3</td>
+    <td>7.3</td>
+    <td>31.0</td>
+    <td>.275</td>
+    <td>.334</td>
+    <td>1.3</td>
+    <td>3.3</td>
+    <td>4.7</td>
+    <td>48.3</td>
+    <td>0.0</td>
+    <td>5.21</td>
+    <td>1.49</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/lnt_v2_100.png"></td>
+    <td>Lightning N Thunder</td>
+    <td>29.6</td>
+    <td>7.9</td>
+    <td>26.9</td>
+    <td>.268</td>
+    <td>.336</td>
+    <td>2.0</td>
+    <td>4.1</td>
+    <td>3.1</td>
+    <td>59.9</td>
+    <td>3.0</td>
+    <td>4.19</td>
+    <td>1.28</td>
+    <td>33.0</td>
+    <td>9.7</td>
+    <td>32.7</td>
+    <td>.298</td>
+    <td>.359</td>
+    <td>1.3</td>
+    <td>4.3</td>
+    <td>1.7</td>
+    <td>55.7</td>
+    <td>3.3</td>
+    <td>4.69</td>
+    <td>1.40</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/mrobz_v3_100.png"></td>
+    <td>Mookies</td>
+    <td>37.0</td>
+    <td>10.1</td>
+    <td>35.1</td>
+    <td>.280</td>
+    <td>.356</td>
+    <td>3.7</td>
+    <td>4.5</td>
+    <td>3.0</td>
+    <td>59.0</td>
+    <td>2.8</td>
+    <td>2.62</td>
+    <td>1.06</td>
+    <td>41.3</td>
+    <td>10.7</td>
+    <td>36.3</td>
+    <td>.299</td>
+    <td>.376</td>
+    <td>5.7</td>
+    <td>4.7</td>
+    <td>2.0</td>
+    <td>55.7</td>
+    <td>3.0</td>
+    <td>2.46</td>
+    <td>0.96</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/possums_192.jpg"></td>
+    <td>Pissed Off Possums</td>
+    <td>27.3</td>
+    <td>8.3</td>
+    <td>26.4</td>
+    <td>.270</td>
+    <td>.343</td>
+    <td>2.3</td>
+    <td>3.7</td>
+    <td>2.1</td>
+    <td>46.9</td>
+    <td>1.2</td>
+    <td>3.87</td>
+    <td>1.28</td>
+    <td>25.7</td>
+    <td>9.7</td>
+    <td>26.3</td>
+    <td>.242</td>
+    <td>.309</td>
+    <td>1.7</td>
+    <td>4.0</td>
+    <td>2.0</td>
+    <td>52.3</td>
+    <td>2.0</td>
+    <td>3.62</td>
+    <td>1.34</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/blue_sox_192.jpg"></td>
+    <td>South Bend Blue Sox</td>
+    <td>31.7</td>
+    <td>9.8</td>
+    <td>33.5</td>
+    <td>.268</td>
+    <td>.335</td>
+    <td>3.4</td>
+    <td>3.0</td>
+    <td>5.3</td>
+    <td>54.0</td>
+    <td>1.3</td>
+    <td>4.45</td>
+    <td>1.39</td>
+    <td>38.0</td>
+    <td>12.0</td>
+    <td>37.3</td>
+    <td>.286</td>
+    <td>.358</td>
+    <td>3.0</td>
+    <td>3.3</td>
+    <td>6.3</td>
+    <td>54.3</td>
+    <td>1.0</td>
+    <td>5.39</td>
+    <td>1.50</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/sultans_v2_192.jpg"></td>
+    <td>Sultans of Dallas</td>
+    <td>34.2</td>
+    <td>10.0</td>
+    <td>29.5</td>
+    <td>.282</td>
+    <td>.366</td>
+    <td>1.8</td>
+    <td>3.7</td>
+    <td>3.9</td>
+    <td>63.5</td>
+    <td>1.1</td>
+    <td>3.78</td>
+    <td>1.22</td>
+    <td>34.7</td>
+    <td>10.3</td>
+    <td>31.0</td>
+    <td>.279</td>
+    <td>.364</td>
+    <td>1.0</td>
+    <td>4.0</td>
+    <td>3.0</td>
+    <td>63.0</td>
+    <td>0.0</td>
+    <td>3.06</td>
+    <td>1.17</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/red_hat_100.gif"></td>
+    <td>Three Finger's Ghost</td>
+    <td>30.6</td>
+    <td>9.1</td>
+    <td>28.9</td>
+    <td>.288</td>
+    <td>.359</td>
+    <td>2.7</td>
+    <td>3.1</td>
+    <td>0.4</td>
+    <td>51.0</td>
+    <td>1.7</td>
+    <td>4.84</td>
+    <td>1.36</td>
+    <td>31.3</td>
+    <td>8.0</td>
+    <td>30.3</td>
+    <td>.294</td>
+    <td>.359</td>
+    <td>2.0</td>
+    <td>2.3</td>
+    <td>0.0</td>
+    <td>50.3</td>
+    <td>0.0</td>
+    <td>5.66</td>
+    <td>1.48</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/blue_black_hat_100.gif"></td>
+    <td>Washington McNasty</td>
+    <td>32.5</td>
+    <td>9.2</td>
+    <td>29.6</td>
+    <td>.276</td>
+    <td>.346</td>
+    <td>4.3</td>
+    <td>2.6</td>
+    <td>3.0</td>
+    <td>49.3</td>
+    <td>3.8</td>
+    <td>4.73</td>
+    <td>1.33</td>
+    <td>34.7</td>
+    <td>10.0</td>
+    <td>32.7</td>
+    <td>.289</td>
+    <td>.359</td>
+    <td>3.3</td>
+    <td>2.0</td>
+    <td>2.3</td>
+    <td>50.3</td>
+    <td>4.0</td>
+    <td>4.33</td>
+    <td>1.10</td>
+  </tr>
+  <tr>
+    <td colspan="2">Max</td>
+    <td>37.0</td>
+    <td>10.4</td>
+    <td>35.1</td>
+    <td>.288</td>
+    <td>.366</td>
+    <td>4.3</td>
+    <td>4.5</td>
+    <td>5.3</td>
+    <td>63.5</td>
+    <td>3.8</td>
+    <td>4.98</td>
+    <td>1.42</td>
+    <td>41.3</td>
+    <td>12.0</td>
+    <td>37.3</td>
+    <td>.299</td>
+    <td>.376</td>
+    <td>5.7</td>
+    <td>4.7</td>
+    <td>6.3</td>
+    <td>63.0</td>
+    <td>4.7</td>
+    <td>6.10</td>
+    <td>1.50</td>
+  </tr>
+  <tr>
+    <td colspan="2">Median</td>
+    <td>31.3</td>
+    <td>9.2</td>
+    <td>29.2</td>
+    <td>.273</td>
+    <td>.344</td>
+    <td>2.2</td>
+    <td>3.1</td>
+    <td>3.1</td>
+    <td>52.3</td>
+    <td>1.6</td>
+    <td>4.32</td>
+    <td>1.32</td>
+    <td>33.0</td>
+    <td>9.7</td>
+    <td>30.8</td>
+    <td>.285</td>
+    <td>.358</td>
+    <td>1.5</td>
+    <td>3.3</td>
+    <td>2.5</td>
+    <td>53.2</td>
+    <td>1.7</td>
+    <td>4.51</td>
+    <td>1.33</td>
+  </tr>
+  <tr>
+    <td colspan="2">Min</td>
+    <td>21.1</td>
+    <td>6.5</td>
+    <td>22.1</td>
+    <td>.258</td>
+    <td>.335</td>
+    <td>1.2</td>
+    <td>2.5</td>
+    <td>0.4</td>
+    <td>44.1</td>
+    <td>0.6</td>
+    <td>2.62</td>
+    <td>1.06</td>
+    <td>18.0</td>
+    <td>5.7</td>
+    <td>17.3</td>
+    <td>.242</td>
+    <td>.309</td>
+    <td>0.0</td>
+    <td>2.0</td>
+    <td>0.0</td>
+    <td>45.7</td>
+    <td>0.0</td>
+    <td>2.46</td>
+    <td>0.96</td>
+  </tr>
+</table>
+
+</div>
+<!--end Week 12-->
+
+<!--begin Week 9-->
+<div id="tab-wk9" class="tab">
+
+<table class="standings withGrid roto scroll-x">
+  <tr class="head">
+    <td colspan="3" rowspan="2">Through Week 9<br>(7 weeks)</td>
+    <td colspan="6">% chance of winning category</td>
+    <td rowspan="2">Batting*</td>
+    <td colspan="6">% chance of winning category</td>
+    <td rowspan="2">Pitching*</td>
+    <td rowspan="2">Total*<br>(# cats)</td>
+    <td rowspan="2">2016</td>
+    <td rowspan="2">Change</td>
+    <td rowspan="2">Average**<br>(win%)</td>
+    <td rowspan="2">H2H%</td>
+    <td rowspan="2">Roto &ndash;<br>H2H</td>
+  </tr>
+  <tr class="head">
+    <td>R</td>
+    <td>HR</td>
+    <td>RBI</td>
+    <td>AVG</td>
+    <td>OBP</td>
+    <td>NSB</td>
+    <td>W</td>
+    <td>SV</td>
+    <td>K</td>
+    <td>HLD</td>
+    <td>ERA</td>
+    <td>WHIP</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td class="imgCell"><img src="images/mrobz_v3_100.png"></td>
+    <td>Mookies <span class="green">&#8593;</span></td>
+    <td>74</td>
+    <td>63</td>
+    <td>71</td>
+    <td>52</td>
+    <td>52</td>
+    <td>54</td>
+    <td>3.66</td>
+    <td>69</td>
+    <td>52</td>
+    <td>72</td>
+    <td>64</td>
+    <td>86</td>
+    <td>80</td>
+    <td>4.24</td>
+    <td>7.89</td>
+    <td>6.95</td>
+    <td><span class="green">+0.94</span></td>
+    <td>66</td>
+    <td>64</td>
+    <td>+2</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td class="imgCell"><img src="images/sultans_v2_192.jpg"></td>
+    <td>Sultans of Dallas <span class="red">&#8595;</span></td>
+    <td>72</td>
+    <td>64</td>
+    <td>53</td>
+    <td>62</td>
+    <td>68</td>
+    <td>44</td>
+    <td>3.63</td>
+    <td>58</td>
+    <td>65</td>
+    <td>77</td>
+    <td>43</td>
+    <td>51</td>
+    <td>62</td>
+    <td>3.55</td>
+    <td>7.18</td>
+    <td>7.26</td>
+    <td><span class="red">-0.08</span></td>
+    <td>60</td>
+    <td>49</td>
+    <td>+11</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td class="imgCell"><img src="images/orange_black_hat_100.gif"></td>
+    <td>Conquistadors <span class="green">&#8593;</span></td>
+    <td>49</td>
+    <td>68</td>
+    <td>61</td>
+    <td>40</td>
+    <td>45</td>
+    <td>25</td>
+    <td>2.88</td>
+    <td>26</td>
+    <td>71</td>
+    <td>64</td>
+    <td>66</td>
+    <td>61</td>
+    <td>60</td>
+    <td>3.48</td>
+    <td>6.37</td>
+    <td>5.90</td>
+    <td><span class="green">+0.47</span></td>
+    <td>53</td>
+    <td>62</td>
+    <td>-9</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td class="imgCell"><img src="images/blue_sox_192.jpg"></td>
+    <td>South Bend Blue Sox <span class="green">&#8593;</span></td>
+    <td>46</td>
+    <td>52</td>
+    <td>65</td>
+    <td>41</td>
+    <td>34</td>
+    <td>64</td>
+    <td>3.02</td>
+    <td>43</td>
+    <td>72</td>
+    <td>54</td>
+    <td>38</td>
+    <td>56</td>
+    <td>42</td>
+    <td>3.06</td>
+    <td>6.08</td>
+    <td>5.83</td>
+    <td><span class="green">+0.25</span></td>
+    <td>51</td>
+    <td>55</td>
+    <td>-4</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td class="imgCell"><img src="images/red_hat_100.gif"></td>
+    <td>Three Finger's Ghost</td>
+    <td>52</td>
+    <td>61</td>
+    <td>50</td>
+    <td>65</td>
+    <td>64</td>
+    <td>57</td>
+    <td>3.48</td>
+    <td>56</td>
+    <td>7</td>
+    <td>45</td>
+    <td>59</td>
+    <td>43</td>
+    <td>49</td>
+    <td>2.58</td>
+    <td>6.06</td>
+    <td>6.29</td>
+    <td><span class="red">-0.23</span></td>
+    <td>51</td>
+    <td>37</td>
+    <td>+14</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td class="imgCell"><img src="images/lnt_v2_100.png"></td>
+    <td>Lightning N Thunder <span class="red">&#8595;</span></td>
+    <td>41</td>
+    <td>33</td>
+    <td>30</td>
+    <td>33</td>
+    <td>28</td>
+    <td>46</td>
+    <td>2.11</td>
+    <td>65</td>
+    <td>57</td>
+    <td>78</td>
+    <td>70</td>
+    <td>54</td>
+    <td>66</td>
+    <td>3.90</td>
+    <td>6.00</td>
+    <td>6.93</td>
+    <td><span class="red">-0.93</span></td>
+    <td>50</td>
+    <td>54</td>
+    <td>-4</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td class="imgCell"><img src="images/blue_black_hat_100.gif"></td>
+    <td>Washington McNasty <span class="green">&#8593;</span></td>
+    <td>58</td>
+    <td>53</td>
+    <td>51</td>
+    <td>50</td>
+    <td>43</td>
+    <td>82</td>
+    <td>3.35</td>
+    <td>43</td>
+    <td>50</td>
+    <td>35</td>
+    <td>84</td>
+    <td>31</td>
+    <td>23</td>
+    <td>2.65</td>
+    <td>6.00</td>
+    <td>4.21</td>
+    <td><span class="green">+1.79</span></td>
+    <td>50</td>
+    <td>58</td>
+    <td>-8</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td class="imgCell"><img src="images/battaillon_192.jpg"></td>
+    <td>BATtaillon <span class="green">&#8593;</span></td>
+    <td>53</td>
+    <td>39</td>
+    <td>39</td>
+    <td>57</td>
+    <td>63</td>
+    <td>39</td>
+    <td>2.89</td>
+    <td>69</td>
+    <td>62</td>
+    <td>54</td>
+    <td>22</td>
+    <td>42</td>
+    <td>47</td>
+    <td>2.96</td>
+    <td>5.85</td>
+    <td>5.46</td>
+    <td><span class="green">+0.39</span></td>
+    <td>49</td>
+    <td>47</td>
+    <td>+2</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td class="imgCell"><img src="images/camels_192.jpg"></td>
+    <td>Cuban Camels <span class="red">&#8595;</span></td>
+    <td>68</td>
+    <td>63</td>
+    <td>46</td>
+    <td>34</td>
+    <td>50</td>
+    <td>71</td>
+    <td>3.31</td>
+    <td>43</td>
+    <td>41</td>
+    <td>30</td>
+    <td>40</td>
+    <td>48</td>
+    <td>40</td>
+    <td>2.43</td>
+    <td>5.74</td>
+    <td>6.08</td>
+    <td><span class="red">-0.34</span></td>
+    <td>48</td>
+    <td>49</td>
+    <td>-1</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td class="imgCell"><img src="images/possums_192.jpg"></td>
+    <td>Pissed Off Possums <span class="red">&#8595;</span></td>
+    <td>40</td>
+    <td>39</td>
+    <td>42</td>
+    <td>63</td>
+    <td>67</td>
+    <td>50</td>
+    <td>3.01</td>
+    <td>57</td>
+    <td>29</td>
+    <td>19</td>
+    <td>25</td>
+    <td>53</td>
+    <td>58</td>
+    <td>2.41</td>
+    <td>5.42</td>
+    <td>6.32</td>
+    <td><span class="red">-0.90</span></td>
+    <td>45</td>
+    <td>44</td>
+    <td>+1</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td class="imgCell"><img src="images/red_jersey_100.gif"></td>
+    <td>Jackie Treehorn</td>
+    <td>33</td>
+    <td>37</td>
+    <td>62</td>
+    <td>45</td>
+    <td>44</td>
+    <td>34</td>
+    <td>2.55</td>
+    <td>32</td>
+    <td>79</td>
+    <td>53</td>
+    <td>26</td>
+    <td>27</td>
+    <td>31</td>
+    <td>2.48</td>
+    <td>5.03</td>
+    <td>5.17</td>
+    <td><span class="red">-0.14</span></td>
+    <td>42</td>
+    <td>51</td>
+    <td>-9</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td class="imgCell"><img src="images/red_jersey_100.gif"></td>
+    <td>Isotopes <span class="red">&#8595;</span></td>
+    <td>15</td>
+    <td>28</td>
+    <td>30</td>
+    <td>59</td>
+    <td>43</td>
+    <td>34</td>
+    <td>2.09</td>
+    <td>39</td>
+    <td>15</td>
+    <td>19</td>
+    <td>63</td>
+    <td>49</td>
+    <td>42</td>
+    <td>2.27</td>
+    <td>4.36</td>
+    <td>5.60</td>
+    <td><span class="red">-1.24</span></td>
+    <td>36</td>
+    <td>30</td>
+    <td>+6</td>
+  </tr>
+</table>
+
+<table class="averages withGrid roto scroll-x">
+  <tr class="head">
+    <td colspan="2" rowspan="2">Averages per Week</td>
+    <td colspan="12">Season</td>
+    <td colspan="12">Weeks 7 &ndash; 9</td>
+  </tr>
+  <tr class="head">
+    <td>R</td>
+    <td>HR</td>
+    <td>RBI</td>
+    <td>AVG</td>
+    <td>OBP</td>
+    <td>NSB</td>
+    <td>W</td>
+    <td>SV</td>
+    <td>K</td>
+    <td>HLD</td>
+    <td>ERA</td>
+    <td>WHIP</td>
+    <td>R</td>
+    <td>HR</td>
+    <td>RBI</td>
+    <td>AVG</td>
+    <td>OBP <sup>&#8224;</sup></td>
+    <td>NSB</td>
+    <td>W</td>
+    <td>SV</td>
+    <td>K</td>
+    <td>HLD</td>
+    <td>ERA</td>
+    <td>WHIP</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/battaillon_192.jpg"></td>
+    <td>BATtaillon</td>
+    <td>30.6</td>
+    <td>7.6</td>
+    <td>25.9</td>
+    <td>.277</td>
+    <td>.356</td>
+    <td>1.7</td>
+    <td>4.1</td>
+    <td>4.0</td>
+    <td>54.3</td>
+    <td>0.7</td>
+    <td>4.27</td>
+    <td>1.31</td>
+    <td>29.3</td>
+    <td>9.7</td>
+    <td>26.7</td>
+    <td>.268</td>
+    <td>.349</td>
+    <td>-0.7</td>
+    <td>4.7</td>
+    <td>4.0</td>
+    <td>44.0</td>
+    <td>0.0</td>
+    <td>5.35</td>
+    <td>1.34</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/orange_black_hat_100.gif"></td>
+    <td>Conquistadors</td>
+    <td>29.9</td>
+    <td>10.3</td>
+    <td>30.4</td>
+    <td>.259</td>
+    <td>.339</td>
+    <td>1.1</td>
+    <td>2.1</td>
+    <td>4.7</td>
+    <td>58.3</td>
+    <td>2.7</td>
+    <td>3.69</td>
+    <td>1.24</td>
+    <td>30.7</td>
+    <td>10.3</td>
+    <td>30.7</td>
+    <td>.260</td>
+    <td>.336</td>
+    <td>1.7</td>
+    <td>2.0</td>
+    <td>5.3</td>
+    <td>60.0</td>
+    <td>3.0</td>
+    <td>3.73</td>
+    <td>1.30</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/camels_192.jpg"></td>
+    <td>Cuban Camels</td>
+    <td>33.4</td>
+    <td>9.9</td>
+    <td>27.4</td>
+    <td>.257</td>
+    <td>.345</td>
+    <td>4.1</td>
+    <td>2.9</td>
+    <td>2.9</td>
+    <td>47.9</td>
+    <td>1.6</td>
+    <td>4.18</td>
+    <td>1.34</td>
+    <td>32.7</td>
+    <td>9.0</td>
+    <td>27.0</td>
+    <td>.246</td>
+    <td>.331</td>
+    <td>4.0</td>
+    <td>2.3</td>
+    <td>3.0</td>
+    <td>48.3</td>
+    <td>1.0</td>
+    <td>4.22</td>
+    <td>1.38</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/red_jersey_100.gif"></td>
+    <td>Isotopes</td>
+    <td>22.4</td>
+    <td>6.9</td>
+    <td>24.1</td>
+    <td>.278</td>
+    <td>.337</td>
+    <td>1.6</td>
+    <td>2.7</td>
+    <td>1.3</td>
+    <td>43.4</td>
+    <td>2.9</td>
+    <td>4.15</td>
+    <td>1.33</td>
+    <td>20.3</td>
+    <td>6.0</td>
+    <td>24.7</td>
+    <td>.311</td>
+    <td>.350</td>
+    <td>2.0</td>
+    <td>2.0</td>
+    <td>1.3</td>
+    <td>43.3</td>
+    <td>3.7</td>
+    <td>3.71</td>
+    <td>1.21</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/red_jersey_100.gif"></td>
+    <td>Jackie Treehorn</td>
+    <td>26.6</td>
+    <td>7.6</td>
+    <td>31.0</td>
+    <td>.265</td>
+    <td>.339</td>
+    <td>1.6</td>
+    <td>2.4</td>
+    <td>5.0</td>
+    <td>53.7</td>
+    <td>0.9</td>
+    <td>4.88</td>
+    <td>1.38</td>
+    <td>26.7</td>
+    <td>8.7</td>
+    <td>31.0</td>
+    <td>.266</td>
+    <td>.337</td>
+    <td>1.7</td>
+    <td>1.7</td>
+    <td>5.0</td>
+    <td>50.0</td>
+    <td>1.0</td>
+    <td>5.48</td>
+    <td>1.36</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/lnt_v2_100.png"></td>
+    <td>Lightning N Thunder</td>
+    <td>28.1</td>
+    <td>7.1</td>
+    <td>24.4</td>
+    <td>.255</td>
+    <td>.327</td>
+    <td>2.3</td>
+    <td>4.0</td>
+    <td>3.7</td>
+    <td>61.7</td>
+    <td>2.9</td>
+    <td>3.97</td>
+    <td>1.22</td>
+    <td>32.3</td>
+    <td>8.3</td>
+    <td>24.7</td>
+    <td>.264</td>
+    <td>.323</td>
+    <td>2.0</td>
+    <td>5.3</td>
+    <td>4.0</td>
+    <td>62.3</td>
+    <td>3.0</td>
+    <td>4.65</td>
+    <td>1.22</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/mrobz_v3_100.png"></td>
+    <td>Mookies</td>
+    <td>35.1</td>
+    <td>9.9</td>
+    <td>34.6</td>
+    <td>.272</td>
+    <td>.346</td>
+    <td>2.9</td>
+    <td>4.4</td>
+    <td>3.4</td>
+    <td>60.4</td>
+    <td>2.7</td>
+    <td>2.69</td>
+    <td>1.10</td>
+    <td>31.0</td>
+    <td>8.3</td>
+    <td>26.3</td>
+    <td>.241</td>
+    <td>.315</td>
+    <td>4.7</td>
+    <td>5.7</td>
+    <td>4.0</td>
+    <td>67.0</td>
+    <td>4.0</td>
+    <td>2.11</td>
+    <td>0.98</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/possums_192.jpg"></td>
+    <td>Pissed Off Possums</td>
+    <td>28.0</td>
+    <td>7.7</td>
+    <td>26.4</td>
+    <td>.283</td>
+    <td>.359</td>
+    <td>2.6</td>
+    <td>3.6</td>
+    <td>2.1</td>
+    <td>44.6</td>
+    <td>0.9</td>
+    <td>3.98</td>
+    <td>1.25</td>
+    <td>31.7</td>
+    <td>10.7</td>
+    <td>32.0</td>
+    <td>.308</td>
+    <td>.378</td>
+    <td>3.7</td>
+    <td>4.0</td>
+    <td>1.7</td>
+    <td>42.0</td>
+    <td>1.3</td>
+    <td>4.38</td>
+    <td>1.28</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/blue_sox_192.jpg"></td>
+    <td>South Bend Blue Sox</td>
+    <td>29.0</td>
+    <td>8.9</td>
+    <td>31.9</td>
+    <td>.260</td>
+    <td>.324</td>
+    <td>3.6</td>
+    <td>2.9</td>
+    <td>4.9</td>
+    <td>53.9</td>
+    <td>1.4</td>
+    <td>3.95</td>
+    <td>1.33</td>
+    <td>30.3</td>
+    <td>10.0</td>
+    <td>33.0</td>
+    <td>.251</td>
+    <td>.319</td>
+    <td>3.3</td>
+    <td>2.7</td>
+    <td>4.7</td>
+    <td>54.0</td>
+    <td>0.3</td>
+    <td>4.75</td>
+    <td>1.48</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/sultans_v2_192.jpg"></td>
+    <td>Sultans of Dallas</td>
+    <td>34.0</td>
+    <td>9.9</td>
+    <td>28.9</td>
+    <td>.283</td>
+    <td>.367</td>
+    <td>2.1</td>
+    <td>3.6</td>
+    <td>4.3</td>
+    <td>63.7</td>
+    <td>1.6</td>
+    <td>4.09</td>
+    <td>1.24</td>
+    <td>37.0</td>
+    <td>11.0</td>
+    <td>31.3</td>
+    <td>.275</td>
+    <td>.350</td>
+    <td>1.7</td>
+    <td>3.3</td>
+    <td>5.3</td>
+    <td>60.0</td>
+    <td>0.3</td>
+    <td>4.01</td>
+    <td>1.25</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/red_hat_100.gif"></td>
+    <td>Three Finger's Ghost</td>
+    <td>30.3</td>
+    <td>9.6</td>
+    <td>28.3</td>
+    <td>.285</td>
+    <td>.359</td>
+    <td>3.0</td>
+    <td>3.4</td>
+    <td>0.6</td>
+    <td>51.3</td>
+    <td>2.4</td>
+    <td>4.48</td>
+    <td>1.31</td>
+    <td>30.7</td>
+    <td>10.3</td>
+    <td>30.7</td>
+    <td>.280</td>
+    <td>.351</td>
+    <td>3.7</td>
+    <td>3.7</td>
+    <td>0.3</td>
+    <td>61.0</td>
+    <td>1.7</td>
+    <td>4.76</td>
+    <td>1.38</td>
+  </tr>
+  <tr>
+    <td class="imgCell"><img src="images/blue_black_hat_100.gif"></td>
+    <td>Washington McNasty</td>
+    <td>31.6</td>
+    <td>8.9</td>
+    <td>28.3</td>
+    <td>.270</td>
+    <td>.340</td>
+    <td>4.7</td>
+    <td>2.9</td>
+    <td>3.3</td>
+    <td>48.9</td>
+    <td>3.7</td>
+    <td>4.89</td>
+    <td>1.43</td>
+    <td>33.0</td>
+    <td>10.3</td>
+    <td>28.7</td>
+    <td>.274</td>
+    <td>.336</td>
+    <td>5.3</td>
+    <td>3.3</td>
+    <td>2.0</td>
+    <td>53.3</td>
+    <td>3.7</td>
+    <td>5.02</td>
+    <td>1.34</td>
+  </tr>
+  <tr>
+    <td colspan="2">Max</td>
+    <td>35.1</td>
+    <td>10.3</td>
+    <td>34.6</td>
+    <td>.285</td>
+    <td>.367</td>
+    <td>4.7</td>
+    <td>4.4</td>
+    <td>5.0</td>
+    <td>63.7</td>
+    <td>3.7</td>
+    <td>4.89</td>
+    <td>1.43</td>
+    <td>37.0</td>
+    <td>11.0</td>
+    <td>33.0</td>
+    <td>.311</td>
+    <td>.378</td>
+    <td>5.3</td>
+    <td>5.7</td>
+    <td>5.3</td>
+    <td>67.0</td>
+    <td>4.0</td>
+    <td>5.48</td>
+    <td>1.48</td>
+  </tr>
+  <tr>
+    <td colspan="2">Median</td>
+    <td>30.1</td>
+    <td>8.9</td>
+    <td>28.3</td>
+    <td>.271</td>
+    <td>.343</td>
+    <td>2.4</td>
+    <td>3.1</td>
+    <td>3.6</td>
+    <td>53.8</td>
+    <td>2.0</td>
+    <td>4.12</td>
+    <td>1.31</td>
+    <td>30.8</td>
+    <td>9.8</td>
+    <td>29.7</td>
+    <td>.267</td>
+    <td>.337</td>
+    <td>2.7</td>
+    <td>3.3</td>
+    <td>4.0</td>
+    <td>53.7</td>
+    <td>1.5</td>
+    <td>4.52</td>
+    <td>1.32</td>
+  </tr>
+  <tr>
+    <td colspan="2">Min</td>
+    <td>22.4</td>
+    <td>6.9</td>
+    <td>24.1</td>
+    <td>.255</td>
+    <td>.324</td>
+    <td>1.1</td>
+    <td>2.1</td>
+    <td>0.6</td>
+    <td>43.4</td>
+    <td>0.7</td>
+    <td>2.69</td>
+    <td>1.10</td>
+    <td>20.3</td>
+    <td>6.0</td>
+    <td>24.7</td>
+    <td>.241</td>
+    <td>.315</td>
+    <td>-0.7</td>
+    <td>1.7</td>
+    <td>0.3</td>
+    <td>42.0</td>
+    <td>0.0</td>
+    <td>2.11</td>
+    <td>0.98</td>
+  </tr>
+</table>
+
+</div>
+<!--end Week 9-->
+
+<p><em>
+	* Values in the "batting," "pitching," and "total" columns are calculated by summing a team's probabilities in each category as proportions (e.g., 0.5 rather than 50%). This value can be interpreted as the number of categories the team is expected to win per week.<br>
+	** Values in the "average" column are calculated by averaging a team's probabilities in each category. This value can be interpreted as the team's expected winning percentage. The columns to the right compare this figure to the team's actual winning percentage in our head-to-head standings.<br>
+  <sup>&#8224;</sup> OBP figures in this column may not be perfectly accurate because Yahoo does not provide enough data to fully infer BB, HBP, and SF (only H and AB are reported in weekly totals). It is assumed here that OBP = (H + BB + HBP) / (AB + BB + HBP), omitting SF.<br>
+  <sup>&#8225;</sup> Week 15, which spanned two calendar weeks and about 50% more games than a normal fantasy week, is counted as 1.5 weeks for the purpose of these calculations.
+</em></p>
+
+</main>
+<!-- End Content -->
+
+</div>
+<!-- End Page Container -->
+
+<script type="text/javascript" src="client-scripts/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="client-scripts/nav-menu.js"></script>
+<script type="text/javascript" src="client-scripts/tabs.js"></script>
+
+</body>
+
+</html>

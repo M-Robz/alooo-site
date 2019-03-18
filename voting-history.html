@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1">
+<title>ALOOO Voting History</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+<style>
+  table.scroll-x td { white-space: normal; }
+  ol, ul { padding-left: 20px; }
+
+  @media (max-width: 700px) {
+    td:nth-child(2),
+    td:nth-child(3),
+    td:nth-child(6) {
+      min-width: 10em;
+    }
+  }
+</style>
+
+</head>
+
+<body>
+
+<div id="headerBGimg"></div>
+<div id="headerBGcolor"></div>
+
+<!-- Begin Page Container -->
+<div id="pageContainer" onclick="void(0)"> <!-- dummy onclick permits event delegation in Safari Mobile 7.0+ -->
+
+<!--#include virtual="/alooo/head-nav.html"-->
+
+<!-- Begin Content -->
+<main>
+
+<h1>Voting History</h1>
+
+<table class="noGrid scroll-x scroll-alert">
+  <tr class="head">
+    <td>Season</td>
+    <td>Proposal</td>
+    <td>Options</td>
+    <td>New Rule or Change</td>
+    <td>Margin Required</td>
+    <td>Vote in Favor</td>
+    <td>Outcome</td>
+  </tr>
+  <tr>
+    <td>2017</td>
+    <td>A. Enable managers to add players from free agents/waivers directly to their team's DL slots.</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>7/8</td>
+    <td>Pass</td>
+  </tr>
+  <tr>
+    <td>2017</td>
+    <td>B. Replace pitching wins (W) with quality starts (QS).</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>3/7</td>
+    <td>Fail</td>
+  </tr>
+  <tr>
+    <td>2016</td>
+    <td>A. Replace pitching wins (W) with quality starts (QS).</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>5/8</td>
+    <td>Fail</td>
+  </tr>
+  <tr>
+    <td>2016</td>
+    <td>B. Replace home runs (HR) with total bases (TB).</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>5/8</td>
+    <td>Fail</td>
+  </tr>
+  <tr>
+    <td>2016</td>
+    <td>C. Instead of three OF positions, use one CF and two generic OF slots.</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>4/8</td>
+    <td>Fail</td>
+  </tr>
+  <tr>
+    <td>2015</td>
+    <td>A. Implement a continuous waiver system, with claims
+    processed daily and rosters changes set to &quot;Daily–Today&quot;.</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>3/4</td>
+    <td>Pass</td>
+  </tr>
+  <tr>
+    <td>2015</td>
+    <td>B. Move our playoffs up by one week so that the championship
+    concludes before the last week of the MLB season.</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>5/5</td>
+    <td>Pass</td>
+  </tr>
+  <tr>
+    <td>2015</td>
+    <td>C. Hold the sum of all teams' draft budgets constant at last
+    year's amount plus $50 for the 50 additional players to be drafted: $2650
+    (plus/minus a few dollars due to rounding). </td>
+    <td>Yes, No</td>
+    <td>New</td>
+    <td>Simple majority</td>
+    <td>4/4</td>
+    <td>Pass</td>
+  </tr>
+  <tr>
+    <td>2015</td>
+    <td>D. If proposal C passes, adjust the keeper cap in proportion
+    to the reduced team budgets.</td>
+    <td>Yes, No</td>
+    <td>New</td>
+    <td>Simple majority</td>
+    <td>3/4</td>
+    <td>Pass</td>
+  </tr>
+  <tr>
+    <td>2015</td>
+    <td>E. Should returning managers be allowed to protect...</td>
+    <td>
+    <ol type="i">
+      <li>A specific number of players, or</li>
+      <li>A specific dollar amount?</li>
+    </ol>
+    </td>
+    <td>New</td>
+    <td>Simple majority</td>
+    <td>
+    <ol type="i">
+      <li>1/5</li>
+      <li>4/5</li>
+    </ol>
+    </td>
+    <td>Option (ii) passes</td>
+  </tr>
+  <tr>
+    <td>2015</td>
+    <td>F-1. If proposal E option (i) passes, set the protection
+    limit to 5, 10, or 15 players? Select the response that reflects your order
+    of preference (most to least preferred).</td>
+    <td>
+    <ol type="i">
+      <li>5, 10, 15</li>
+      <li>10, 5, 15</li>
+      <li>10, 15, 5</li>
+      <li>15, 10, 5</li>
+    </ol>
+    </td>
+    <td>New</td>
+    <td>Highest average rank</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>2015</td>
+    <td>F-2. If proposal E option (ii) passes, set the protection
+    limit to a dollar amount that is 50%, 75%, or 100% of the keeper cap? Select
+    the response that reflects your order of preference (most to least
+    preferred).</td>
+    <td>
+    <ol type="i">
+      <li>50%, 75%, 100%</li>
+      <li>75%, 50%, 100%</li>
+      <li>75%, 100%, 50%</li>
+      <li>100%, 75%, 50%</li>
+    </ol>
+    </td>
+    <td>New</td>
+    <td>Highest average rank</td>
+    <td>
+    <ul>
+      <li>50%: 1.3</li>
+      <li>75%: 1.7</li>
+      <li>100%: 3</li>
+    </ul>
+    </td>
+    <td>&quot;50%&quot; passes</td>
+  </tr>
+  <tr>
+    <td>2015</td>
+    <td>G. How many players should the expansion teams pick
+    (combined, not apiece) from each returning team? In other words, how many
+    players should each returning team lose? Select the response that reflects
+    your order of preference (most to least preferred).</td>
+    <td>
+    <ol type="i">
+      <li>1, 2, 3</li>
+      <li>2, 1, 3</li>
+      <li>2, 3, 1</li>
+      <li>3, 2, 1</li>
+    </ol>
+    </td>
+    <td>New</td>
+    <td>Highest average rank</td>
+    <td>&quot;Two&quot; is unanimous first choice</td>
+    <td>&quot;Two&quot; passes</td>
+  </tr>
+  <tr>
+    <td>2015</td>
+    <td>In-season vote: Extend the trade deadline to the latest
+    option, Aug 30, one week before the playoffs.</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>2/2</td>
+    <td>Pass</td>
+  </tr>
+  <tr>
+    <td>2014</td>
+    <td>A. Replace SB with Net SB.</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>5/7</td>
+    <td>Pass</td>
+  </tr>
+  <tr>
+    <td>2014</td>
+    <td>B. Change the stat categories (other than SB) according to
+    the results of Addendum B.</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>5/6</td>
+    <td>Pass</td>
+  </tr>
+  <tr>
+    <td>2014</td>
+    <td>Addendum B. If Prop B passes, change the categories to...
+    (rank your preferences; highest average rank wins; note that Prop A decides
+    between SB and Net SB)</td>
+    <td>
+    <ol type="i">
+      <li>R TB RBI [SB/NetSB] OBP / QS K SV+HLD ERA WHIP</li>
+      <li>R HR RBI [SB/NetSB] OBP / W K SV+HLD ERA WHIP</li>
+      <li>R HR RBI [SB/NetSB] AVG OBP / W QS K SV+HLD ERA WHIP</li>
+      <li>No change; keep R HR RBI [SB/NetSB] AVG OBP / W SV K HLD ERA WHIP</li>
+      <li>R RBI [SB/NetSB] SLG OBP, W K SV+H ERA WHIP</li>
+    </ol>
+    </td>
+    <td>New</td>
+    <td>Highest average rank</td>
+    <td>
+    <ol type="i">
+      <li>2.71</li>
+      <li>2.71</li>
+      <li>3.29</li>
+      <li>2.43</li>
+      <li>3.86</li>
+    </ol>
+    </td>
+    <td>Option (iv) passes</td>
+  </tr>
+  <tr>
+    <td>2014</td>
+    <td>C. Increase the number of DL slots from 4 to the maximum, 5.</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>6/7</td>
+    <td>Pass</td>
+  </tr>
+  <tr>
+    <td>2014</td>
+    <td>D. Allow auction dollars to be traded.</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>5/7</td>
+    <td>Pass</td>
+  </tr>
+  <tr>
+    <td>2013</td>
+    <td>A. Modify or eliminate last year’s divisions.</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>2/2</td>
+    <td>Pass</td>
+  </tr>
+  <tr>
+    <td>2013</td>
+    <td>Addendum A.1. If Prop A passes, organize the divisions as
+    follows (rank your preferences).</td>
+    <td>
+    <ol type="i">
+      <li>East/West</li>
+      <li>According to last year's standings</li>
+      <li>Eliminate divisions</li>
+    </ol>
+    </td>
+    <td>New</td>
+    <td>Highest average rank</td>
+    <td>
+    <ol type="i">
+      <li>1.75</li>
+      <li>2.75</li>
+      <li>1.5</li>
+    </ol>
+    </td>
+    <td>Option (iii) passes</td>
+  </tr>
+  <tr>
+    <td>2013</td>
+    <td>B. Increase the number of DL slots from 4 to 5.</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>1/2</td>
+    <td>Fail</td>
+  </tr>
+  <tr>
+    <td>2013</td>
+    <td>C. Add NA slots.</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>1/2</td>
+    <td>Fail</td>
+  </tr>
+  <tr>
+    <td>2012</td>
+    <td>A. Do not permit a player's salary from the previous year to
+    be higher than his...</td>
+    <td>
+    <ol type="a">
+      <li>Base salary</li>
+      <li>Adjusted salary</li>
+    </ol>
+    </td>
+    <td>New</td>
+    <td>Simple majority</td>
+    <td>
+    <ol type="a">
+      <li>1/6</li>
+      <li>5/6</li>
+    </ol>
+    </td>
+    <td>Option (b) passes</td>
+  </tr>
+  <tr>
+    <td>2012</td>
+    <td>B. Apply the extension penalty to...</td>
+    <td>
+    <ol type="a">
+      <li>A player's cost in the auction as well as his cost against the keeper
+      cap (both penalties are equal)</li>
+      <li>A player's cost in the auction as well as his cost against the keeper
+      cap (penalties are different)</li>
+      <li>Only how much the player counts against the keeper cap</li>
+    </ol>
+    </td>
+    <td>New</td>
+    <td>Simple majority</td>
+    <td>
+    <ol type="a">
+      <li>4/6</li>
+      <li>0/6</li>
+      <li>2/6</li>
+    </ol>
+    </td>
+    <td>Option (a) passes</td>
+  </tr>
+  <tr>
+    <td>2012</td>
+    <td>Addendum B.1. If Option (a) passes on Prop B, what is the
+    magnitude of the extension penalty as a percentage of base salary?</td>
+    <td>Open-ended</td>
+    <td>New</td>
+    <td>Median value submitted</td>
+    <td>3 votes for 20%, 3 votes for 15%</td>
+    <td>&quot;17.5%&quot; passes</td>
+  </tr>
+  <tr>
+    <td>2012</td>
+    <td>Addendum B.2. If Option (b) passes on Prop B, what are the
+    magnitudes of the extension penalties (auction and cap) as a percentage of
+    base salary?</td>
+    <td>Open-ended</td>
+    <td>New</td>
+    <td>Median value submitted</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>2012</td>
+    <td>Addendum B.3. If Option (c) passes on Prop B, what is the
+    magnitude of the extension penalty as a percentage of base salary?</td>
+    <td>Open-ended</td>
+    <td>New</td>
+    <td>Median value submitted</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>2012</td>
+    <td>C. Do not permit managers to keep any player added during
+    the playoffs.</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>6/6</td>
+    <td>Pass</td>
+  </tr>
+  <tr>
+    <td>2012</td>
+    <td>Addendum C.1. If Prop C passes, apply the rule retroactively
+    to players added during the 2011 playoffs.</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>3/6</td>
+    <td>Fail</td>
+  </tr>
+  <tr>
+    <td>2012</td>
+    <td>D. Replace OBP with OPS.</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>3/5</td>
+    <td>Fail</td>
+  </tr>
+  <tr>
+    <td>2011</td>
+    <td>A. Replace the Assists and Errors categories with On-Base
+    Percentage (OBP).</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>5/7</td>
+    <td>Pass</td>
+  </tr>
+  <tr>
+    <td>2011</td>
+    <td>B. Set the new auction keeper cap at $145. (If this
+    proposition fails, we'll discuss it further before voting on other options.)</td>
+    <td>Yes, No</td>
+    <td>New</td>
+    <td>Simple majority</td>
+    <td>7/7</td>
+    <td>Pass</td>
+  </tr>
+  <tr>
+    <td>2011</td>
+    <td>C. Vary managers' auction budgets according to the reverse
+    order of the previous year's regular season standings.</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>4/6</td>
+    <td>Pass</td>
+  </tr>
+  <tr>
+    <td>2011</td>
+    <td>C1. If Prop C passes, the spread between consecutive
+    positions in the standings should be...</td>
+    <td>
+    <ol type="a">
+      <li>$1</li>
+      <li>$2</li>
+      <li>$3</li>
+    </ol>
+    </td>
+    <td>New</td>
+    <td>Highest average rank</td>
+    <td>Option (b) is the unanimous first choice</td>
+    <td>Option (b) passes</td>
+  </tr>
+  <tr>
+    <td>2011</td>
+    <td>D. Divide the league into two divisions.</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>6/6</td>
+    <td>Pass</td>
+  </tr>
+  <tr>
+    <td>2011</td>
+    <td>D1. If Prop D passes, the divisions should be based on...</td>
+    <td>
+    <ol type="a">
+      <li>Geography (manager's city of residence)</li>
+      <li>Last season's playoff finishes (distributed evenly)</li>
+      <li>Being a Robinson</li>
+    </ol>
+    </td>
+    <td>New</td>
+    <td>Highest average rank</td>
+    <td>Of the 7 managers who voted, 6 preferred geography as 1st
+    choice and 1 preferred geography as 2nd choice</td>
+    <td>Option (a) passes</td>
+  </tr>
+  <tr>
+    <td>2011</td>
+    <td>D2. If option (a) wins on Prop D1, the geographical basis
+    should be...</td>
+    <td>
+    <ol type="a">
+      <li>East vs West</li>
+      <li>North vs South</li>
+    </ol>
+    </td>
+    <td>New</td>
+    <td>Simple majority</td>
+    <td>
+    <ol type="a">
+      <li>1/3</li>
+      <li>2/3</li>
+    </ol>
+    </td>
+    <td>Option (b) passes</td>
+  </tr>
+  <tr>
+    <td>2010</td>
+    <td>A. Hold an auction draft.</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>10/10</td>
+    <td>Pass</td>
+  </tr>
+  <tr>
+    <td>2010</td>
+    <td>B. Increase roster size.</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>4/9</td>
+    <td>Fail</td>
+  </tr>
+  <tr>
+    <td>2010</td>
+    <td>C. Increase number of DL slots.</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>7/10</td>
+    <td>Pass</td>
+  </tr>
+  <tr>
+    <td>2010</td>
+    <td>Addendum C-a. If Prop C passes, how many DL slots should we
+    use?</td>
+    <td>&nbsp;</td>
+    <td>New</td>
+    <td>Average value submitted</td>
+    <td>Votes average to 4 slots</td>
+    <td>&quot;4&quot; passes</td>
+  </tr>
+  <tr>
+    <td>2010</td>
+    <td>D. Replace the pitching K category with K/9.</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>6/10</td>
+    <td>Fail</td>
+  </tr>
+  <tr>
+    <td>2010</td>
+    <td>E. Replace AVG with OBP.</td>
+    <td>Yes, No</td>
+    <td>Change</td>
+    <td>Two thirds</td>
+    <td>4/8</td>
+    <td>Fail</td>
+  </tr>
+</table>
+
+</main>
+<!-- End Content -->
+
+</div>
+<!-- End Page Container -->
+
+<script type="text/javascript" src="client-scripts/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="client-scripts/nav-menu.js"></script>
+
+</body>
+
+</html>

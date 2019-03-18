@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1">
+<title>ALOOO Roto Standings</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+
+<body>
+
+<div id="headerBGimg"></div>
+<div id="headerBGcolor"></div>
+
+<!-- Begin Page Container -->
+<div id="pageContainer" onclick="void(0)"> <!-- dummy onclick permits event delegation in Safari Mobile 7.0+ -->
+
+<!--#include virtual="/alooo/head-nav.html"-->
+
+<!-- Begin Content -->
+<main>
+<h1>Explanation of New Roto Standings</h1>
+
+<p><em>Introduced in Season 9 (2016)</em></p>
+
+<p>The new roto standings estimate a team's odds of winning a particular category against a random opponent. The mean and standard deviation of teams' weekly totals are used to estimate a probability distribution for each team. These distributions are compared to calculate the probability that a randomly selected point from one distribution is greater than a random point from another.</p>
+
+<p>To illustrate, the following graph displays probability curves for two fictional teams. The blue team has a mean of 12 and standard deviation of 2, while the red team has a mean of 8 and standard deviation of 3. To compute the blue team's roto score, we calculate the probability that a random point taken from the blue curve is greater than a random point from the red curve.</p>
+
+<img src="images/normal-curves.png" style="display:block; margin: 10px auto;" />
+
+<p>Scores are calculated using the formula derived below:</p>
+
+<div class="explanation">
+	<p>Say we have two teams, (a) and (b), with corresponding probability distributions in a given category.</p>
+	
+	<p>We are interested in P(<em>x</em><sub>a</sub>&gt;<em>x</em><sub>b</sub>) = P(<em>x</em><sub>a</sub>-<em>x</em><sub>b</sub>&gt;0), where <em>x</em> is a point selected randomly from the indicated distribution.</p>
+	
+	<p>Assume both distributions are normal and independent. The difference between a random point from the first and a random point from the second, <em>x</em><sub>D</sub>=<em>x</em><sub>a</sub>-<em>x</em><sub>b</sub> , will also be normally distributed, with the following properties:</p>
+	
+	<ul>
+		<li>The mean is the difference between the two teams' means: <em>&mu;</em><sub>D</sub>=<em>&mu;</em><sub>a</sub>-<em>&mu;</em><sub>b</sub></li>
+		<li>The variance is pooled: <em>&sigma;</em><sub>D</sub><sup>2</sup>=<em>&sigma;</em><sub>a</sub><sup>2</sup>+<em>&sigma;</em><sub>b</sub><sup>2</sup> , and therefore the standard deviation <em>&sigma;</em><sub>D</sub>=&#8730;(<em>&sigma;</em><sub>a</sub><sup>2</sup>+<em>&sigma;</em><sub>b</sub><sup>2</sup>)</li>
+	</ul>
+	
+	<p>Define the z-score for a given value of <em>x</em> as the number of standard deviations from the mean: <em>z</em><sub>D</sub>=(<em>x</em><sub>D</sub>-<em>&mu;</em><sub>D</sub>)/<em>&sigma;</em><sub>D</sub></p>
+	
+	<p>When <em>x</em><sub>a</sub>-<em>x</em><sub>b</sub>=0, <em>x</em><sub>D</sub>=0 and <em>z</em><sub>D</sub> = (0-<em>&mu;</em><sub>D</sub>)/<em>&sigma;</em><sub>D</sub> = -(<em>&mu;</em><sub>a</sub>-<em>&mu;</em><sub>b</sub>)/&#8730;(<em>&sigma;</em><sub>a</sub><sup>2</sup>+<em>&sigma;</em><sub>b</sub><sup>2</sup>)</p>
+	
+	<p>Then P(<em>x</em><sub>a</sub>-<em>x</em><sub>b</sub>>0) = &Phi;(<em>z</em><sub>D</sub>) = &Phi;((<em>&mu;</em><sub>b</sub>-<em>&mu;</em><sub>a</sub>)/&#8730;(<em>&sigma;</em><sub>a</sub><sup>2</sup>+<em>&sigma;</em><sub>b</sub><sup>2</sup>)), where &Phi; is the integral of the standard normal distribution from <em>z</em> to &#8734;.</p>
+	
+	<p>Calculate P against all opposing teams and average the resulting probabilities to estimate the odds of winning the category against a random opponent. This is the roto score for team (a).</p>
+	
+	<p style="margin-left:1.5em"><em>Note: When a category is inversely scored (e.g., a lower ERA is better), the roto score is 1-P.</em></p>
+	
+	<p><strong>The final equation is: &nbsp;&nbsp;P(<em>x</em><sub>own</sub> &gt; <em>x</em><sub>opponent</sub>) = <em>Avg</em><sub>i</sub>{ &Phi;((<em>&mu;</em><sub>i</sub> - <em>&mu;</em><sub>own</sub>) / &#8730;(<em>&sigma;</em><sub>i</sub><sup>2</sup> + <em>&sigma;</em><sub>own</sub><sup>2</sup>)) }&nbsp;&nbsp;</strong> where <em>i</em> is an index of the set of all opposing teams, and <em>Avg</em> is an operator meaning "average of the following set."</p>
+</div>
+
+</main>
+<!-- End Content -->
+
+</div>
+<!-- End Page Container -->
+
+<script type="text/javascript" src="client-scripts/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="client-scripts/nav-menu.js"></script>
+
+</body>
+
+</html>

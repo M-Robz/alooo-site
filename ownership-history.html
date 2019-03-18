@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1">
+<title>ALOOO Ownership History</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+
+<body>
+
+<div id="headerBGimg"></div>
+<div id="headerBGcolor"></div>
+
+<!-- Begin Page Container -->
+<div id="pageContainer" onclick="void(0)"> <!-- dummy onclick permits event delegation in Safari Mobile 7.0+ -->
+
+<!--#include virtual="/alooo/head-nav.html"-->
+
+<!-- Begin Content -->
+<main>
+<h1><span class="subtitle">ALOOO Keeper League</span><br />
+  Ownership History</h1>
+
+<div class="insetBox">
+  <div class="searchTool">
+    Browse by manager:&nbsp;
+    <select data-criterion="owner">
+      <option value="default" selected></option>
+      <option value="Ben R.">Ben R.</option>
+      <option value="Brad B.">Brad B.</option>
+      <option value="Brent S.">Brent S.</option>
+      <option value="Bryce P.">Bryce P.</option>
+      <option value="Chris P.">Chris P.</option>
+      <option value="Clark S.">Clark S.</option>
+      <option value="Eddie M.">Eddie M.</option>
+      <option value="Eric H.">Eric H.</option>
+      <option value="Greg R.">Greg R.</option>
+      <option value="Joe R.">Joe R.</option>
+      <option value="Joel">Joel</option>
+      <option value="John C.">John C.</option>
+      <option value="John M.">John M.</option>
+      <option value="Jon C.">Jon C.</option>
+      <option value="Jon Y.">Jon Y.</option>
+      <option value="Kwang O.">Kwang O.</option>
+      <option value="Laura S.">Laura S.</option>
+      <option value="Matt D.">Matt D.</option>
+      <option value="Matt R.">Matt R.</option>
+      <option value="Mike R.">Mike R.</option>
+      <option value="Nick M.">Nick M.</option>
+      <option value="Rich W.">Rich W.</option>
+      <option value="Ryan F.">Ryan F.</option>
+      <option value="Scott B.">Scott B.</option>
+      <option value="Seth H.">Seth H.</option>
+      <option value="Steve M.">Steve M.</option>
+      <option value="Tony L.">Tony L.</option>
+      <option value="Will C.">Will C.</option>
+      <option value="Zach K.">Zach K.</option>
+    </select>
+  </div>
+
+  <div class="searchTool">
+      Browse by last initial:&nbsp;
+    <form data-criterion="linit">
+      <input type="search" size="1" maxlength="1">
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <div class="searchTool">
+    <form data-criterion="lname">
+      Search within last name:&nbsp;
+      <input type="search" size="10">
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</div>
+
+<div id="tableContainer">
+  <p class="key">* Won championship</p>
+  <table id="serverResponse" class="noGrid scroll-x scroll-alert"></table>
+</div>
+
+</main>
+<!-- End Content -->
+
+</div>
+<!-- End Page Container -->
+
+<script type="text/javascript" src="client-scripts/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="client-scripts/nav-menu.js"></script>
+<script type="text/javascript" src="client-scripts/ownership.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,524 @@
+@charset "utf-8";
+
+html {
+  font-size: 14px;
+  color: black;
+}
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 1em;
+  line-height: 1.3em;
+  background: url(images/comerica-park.jpg) repeat fixed;
+}
+#headerBGimg {
+  position: absolute;
+  top: 25px;
+  left: 225px;
+  height: 100px;
+  width: 654px;
+  background: url(images/at-bat.png) no-repeat;
+  opacity: 0.5;
+}
+#headerBGcolor {
+  position: absolute;
+  top: 20px;
+  height: 110px;
+  width: 100%;
+  min-width: 1130px; /* total min-width of pageContainer */
+  background: rgba(0, 59, 119, 0.5);
+}
+#pageContainer {
+  min-height: 100%;
+  width: auto;
+  min-width: 1090px; /* can set to header width or set wider to make room for tables in main */
+  padding: 0 20px;
+  overflow: hidden;
+}
+header {
+  position: absolute;
+  top: 20px;
+  height: 110px;
+  width: 1049px; /* leagueLogo img + leagueLogo padding + teamLogos */
+}
+#leagueLogo {
+  float: left;
+  height: 100px;
+  padding: 5px 20px 5px 0;
+}
+#leagueLogo img {
+  height: 96px;
+  width: 155px;
+  border: 2px solid rgba(0, 59, 119, 0.8);
+}
+#teamLogos {
+  float: left;
+  height: 60px;
+  width: 840px; /* total teamLogos img width * #logos */
+  padding: 25px 15px;
+}
+#teamLogos img {
+  display: block; /* prevents browser from inserting variable space between images */
+  float: left;
+  height: 50px;
+  width: 50px;
+  margin: 3px 8px;
+  border: 2px solid rgba(0, 59, 119, 0.8);
+}
+
+/* ---- NAVIGATION MENU ---- */
+nav {
+  position: static;
+  float: left;
+  height: 100%;
+  width: 159px;
+  padding: 150px 10px 0 0;
+}
+.menuButton {
+  visibility: hidden;
+  position: absolute;
+}
+.menuButton svg {
+  position: absolute;
+}
+.navItem {
+  position: relative;
+  margin-bottom: 10px;
+}
+.navItem:last-child {
+  margin-bottom: 0;
+}
+.navItem a:first-child {
+  position: relative;
+  display: block;
+  height: 28px;
+  width: 155px;
+  padding-top: 9px;
+  z-index: 1;
+  text-decoration: none;
+  text-align: center;
+  color: #500019;
+  border: 2px solid rgba(80, 0, 25, 0.3);
+  background-color: rgba(170, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(68, 0, 0, 0.2) inset;
+  overflow: hidden;
+}
+.navItem a:hover {
+  background-color: rgba(175, 125, 125, 0.9);
+  box-shadow: 0 0 10px rgba(123, 75, 75, 0.9) inset;
+}
+.subNav {
+  visibility: hidden;
+  position: absolute; /* has to be descended from navItem for absolute positioning */
+  left: 140px;
+  bottom: 8px;
+  width: auto;
+  padding: 4px;
+  z-index: 2;
+  border: 2px solid rgba(175, 125, 125, 0.7);
+  background-color: rgba(210, 200, 200, 0.8);
+}
+.subNav span {
+  display: block;
+  margin: 0 0 4px 0;
+  padding: 0 2px;
+  font-size: 0.9em;
+  color: #770000;
+  border-bottom: 1px solid rgba(175, 125, 125, 0.5);
+}
+.subNav a {
+  position: relative;
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 0 0 4px 0;
+  padding: 0 0 0 4px;
+  z-index: 2;
+  text-decoration: none;
+  text-align: left;
+  color: #500019;
+  border: none;
+  background: none;
+  box-shadow: none;
+  overflow: hidden;
+}
+.subNav a:hover {
+  background-color: rgba(150, 125, 125, 0.5);
+  box-shadow: none;
+}
+
+/* ---- MAIN CONTENT AREA ---- */
+main {
+  display: block; /* prevents element from having no width in IE */
+  height: auto;
+  min-height: 500px;
+  width: auto;
+  margin-left: 179px; /* left column + 20px */
+  overflow: visible;
+  padding: 150px 20px 20px 20px;
+  background-color: rgba(50, 50, 50, 0.1);
+}
+h1 {
+  margin: 0 0 26px 0;
+  padding-bottom: 4px;
+  font-size: 1.6em;
+  line-height: 1em;
+  color: rgb(0, 41, 83);
+  border-bottom: 4px groove rgba(40, 40, 40, 0.2);
+}
+h2 {
+  margin-top: 26px;
+  font-size: 1.3em;
+}
+h3 {
+  margin-top: 26px;
+  font-size: 1.1em;
+}
+h4 {
+  font-size: 1em;
+}
+span.subtitle {
+  font-size: 0.6em;
+  line-height: 2em;
+}
+a {
+  color: rgb(0, 68, 136);
+}
+table {
+  border-collapse: collapse;
+}
+td {
+  margin: 0;
+  padding: 2px;
+}
+table.noGrid {
+  width: 100%;
+  font-size: 0.85em;
+  text-align: left;
+}
+table.noGrid tr {
+  border-bottom: 1px solid #757575;
+}
+table.noGrid tr.head,
+table.noGrid th {
+  font-weight: bold;
+  vertical-align: bottom;
+  border-bottom: 1px solid #111111;
+}
+table.noGrid td {
+  background: none;
+  border: none;
+}
+table.withGrid {
+  width: 100%;
+  margin-bottom: 25px;
+  font-size: 0.85em;
+  text-align: center;
+}
+table.withGrid td {
+  background-color: #ffffff;
+  border: 1px solid #111111;
+}
+table.withGrid tr.head td,
+table.withGrid th {
+  font-weight: bold;
+  vertical-align: bottom;
+  background-color: #c0c0c0;
+}
+table.withGrid tr.subHead td {
+  background-color: #e0e0e0;
+}
+table.highlight-first-col td:first-child {
+  background-color: #c0c0c0;
+}
+.imgCell {
+  width: 20px;
+}
+.imgCell img {
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  border: none;
+}
+.insetBox {
+  padding: 10px;
+  background-color: rgba(75, 75, 75, 0.1);
+  box-shadow: 0 2px 6px 2px rgba(40, 40, 40, 0.1) inset;
+}
+.tabMenu a.active {
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
+
+/* ---- HOME PAGE ---- */
+.homePageBox {
+  margin-bottom: 20px;
+  overflow: auto;
+}
+.homePageBox h1 {
+  margin: 0 0 4px 0;
+  padding: 2px 10px 0 10px;
+  font-size: 1.3em;
+  line-height: 1.33em;
+  border-bottom: 1px solid #7d7d7d;
+  box-shadow: 0 -2px 6px 2px rgba(40, 40, 40, 0.1) inset;
+}
+.rotoBox {
+  float: left;
+  max-width: 400px;
+  margin-right: 10px;
+}
+.rotoBox p {
+  margin: 10px 0;
+  padding: 0;
+  font-size: 0.85em;
+  text-align: center;
+}
+.boxContent {
+  border-top: 1px solid #7d7d7d;
+}
+.boxContent td {
+  padding: 3px 5px;
+  vertical-align: top;
+  border: none;
+}
+
+/* ---- ROTO STANDINGS ---- */
+.roto, .rotoOld {
+	margin-top: 20px;
+	width: auto;
+}
+.rotoOld img { /* old styles for team logos */
+	float: left;
+	margin-right: 5px;
+	height: 20px;
+	width: 20px;
+	border: none;
+}
+
+/* ---- RULES ---- */
+.rules table {
+  width: auto;
+  margin: 0 0 10px 5%;
+}
+.rules td {
+  padding: 2px 8px;
+}
+.explanation {
+  width: 90%;
+  margin: 0 5% 10px 5%;
+  padding: 10px;
+  font-size: 0.9em;
+  background-color: rgba(200, 210, 200, 0.4);
+  border: 1px solid rgb(140, 150, 140);
+}
+.explanation h4 {
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+.explanation p {
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+
+/* ---- AWARDS ---- */
+.award {
+  float: left;
+  width: 48%;
+  margin: 0 1%;
+}
+.award h2 {
+  text-align: center;
+  margin-bottom: 6px;
+}
+.award table {
+  width: 100%;
+}
+.award.no-table {
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+/* ---- OWNERSHIP ---- */
+.searchTool {
+  margin: 5px 0;
+}
+form {
+  display: inline;
+}
+.key {
+  margin: 20px 0;
+  font-size: 12px;
+  font-style: italic;
+}
+
+
+/* --------------------------- */
+/*      MOBILE ADAPTATION      */
+/* --------------------------- */
+
+@media screen and (max-width: 700px) {
+
+/* NOTE: iPhone4 dimensions = 640 x 960; iPhone5 = 640 x 1136 */
+
+body {
+  width: 100%;
+  font-size: 1.15em; /* 16.1px */
+}
+#headerBGimg {
+  display: none;
+}
+#headerBGcolor {
+  top: 10px;
+  min-width: 0;
+}
+#pageContainer {
+  min-width: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+header {
+  top: 10px;
+  left: 0;
+  width: 100%;
+}
+#leagueLogo {
+  float: none;
+  width: 159px; /* 155 img + 2px border */
+  margin: 0 auto;
+  padding-right: 0;
+}
+#leagueLogo img {
+  margin-left: auto;
+  margin-right: auto;
+}
+#teamLogos {
+  float: none;
+  display: none;
+}
+
+/* ---- NAVIGATION MENU ---- */
+nav {
+  position: absolute;
+  top: 0px;
+  left: -10.8em; /* = total width of element */
+  height: auto;
+  width: 9.6em; /* (navItem a width + navItem a border)*.85 = 9.588 */
+  padding: 0.6em;
+  background-color: rgba(200,200,200,0.9);
+  -webkit-transition: left 0.5s;
+  transition: left 0.5s;
+}
+nav.visible {
+  left: 0;
+}
+.menuButton {
+  visibility: visible;
+  display: block;
+  top: 0px;
+  left: 10.8em;
+  height: 46px;
+  padding: 10px;
+  background-color: rgba(200,200,200,0.9);
+}
+.menuButton svg {
+  position: static;
+  height: 46px;
+  width: 45px;
+}
+.menuButton rect {
+  fill: rgb(150,150,150);
+  stroke-width: 1;
+  stroke: rgba(25,25,25,0.3);
+}
+.navItem {
+  margin-bottom: 0.6em;
+}
+.navItem a:first-child { /* unit context is 0.85em * body font-size */
+  height: 2.5em;
+  width: 11em;
+  padding-top: 1.2em;
+  font-size: 0.85em;
+  border-width: 0.14em;
+}
+.subNav {
+  left: 8.1em;
+  bottom: 0.5em;
+  padding: 0.2em;
+  font-size: 1em; /* parent is navItem */
+  border-width: 0.1em;
+}
+.subNav span {
+  margin-bottom: 0.2em;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+  border-width: 0.1em;
+}
+.subNav a {
+  height: 1.1em;
+  width: auto;
+  margin-bottom: 0;
+  padding: 0.5em 0 0.5em 0.2em;
+  font-size: 1em;
+}
+.subNav.mobile-down {
+  top: 0.5em;
+  bottom: auto;
+}
+
+/* ---- MAIN CONTENT AREA ---- */
+main {
+  margin-left: 0;
+  padding: 130px 10px 10px 10px;
+}
+h1 {
+  margin-top: 10px;
+}
+table.noGrid, table.withGrid { /* don't display block; prevents table centering */
+  width: auto;
+  font-size: 0.75em;
+}
+table.scroll-alert::before { /* unit context is 0.8em * body font-size */
+  display: inline-block;
+  margin: 0.8em 0 0.4em 0;
+  padding: 0.4em;
+  background-color: #bbbbbb;
+  border: 1px transparent;
+  border-radius: 0.3em;
+  font-size: 0.8em;
+  color: #444444;
+  content: "( Swipe left or scroll right to view rest of table )";
+}
+table.scroll-x {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.insetBox {
+  line-height: 1.4em;
+}
+
+/* ---- HOME PAGE ---- */
+.rotoBox {
+  float: none;
+  width: 100%;
+  max-width: 100%;
+  margin-right: 0;
+}
+
+/* ---- AWARDS ---- */
+.award {
+  float: none;
+  width: 100%;
+  margin: 0 0 2.5em 0;
+}
+.award table {
+  min-width: 80%;
+  margin: 0 auto;
+}
+
+
+}
